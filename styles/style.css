@@ -1,0 +1,331 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} 
+/*
+html{
+    font-size: 62.5%;
+}*/
+body{
+    background-color: #242635;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+nav{
+    display: flex;
+    justify-content: end;
+}
+nav img{
+    width: 50px;
+    padding: 3%;
+    margin-top: 0.2rem;
+    margin-right: 0.7rem;
+}
+input#menu-hamburguesa{
+    visibility: hidden;
+}
+input#menu-hamburguesa~ul{
+    background-color: tan;
+    width: 100%;
+    list-style: none;
+    height: 100%;
+    position: absolute;
+    right: 100%;
+    transition: all 300ms linear;
+    
+}
+input#menu-hamburguesa:checked ~ ul{
+    right:0;
+    z-index: 1000;
+}
+
+.contenedor{
+    display: flex;
+
+    
+}
+.contenedor1{
+
+    position: absolute;
+    top: 4%;
+    left: 1.5%;
+    z-index: 30;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+}
+.contenedor1 p~h1{
+    font-size: 50px;
+    font-weight: 600;
+    color: #34b0be;
+    
+}
+.contenedor2{
+
+
+    position: relative;
+    left: 15vw;
+    
+    
+}
+.contenedor2 .div-esfera{
+ 
+    padding: 35vw;
+    background-color: #d1ceca;
+    border-radius: 100%;
+}
+
+.contenedor3{
+
+    position: absolute;
+    top: 8%;
+    right: 3%;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+}
+.contenedor3>p+h3{
+    color: #34b0be;
+}
+ .div-rectangulo{
+    padding: 0.7rem 2rem; 
+    margin: 0 1rem;
+    background-color: #d1ceca;
+    border-radius: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.contenedor3>div .icono1, .icono2, .icono3{
+    padding: 1.4vw;
+    background: #ffffff;
+    border-radius: 100%;
+    
+}
+
+.div-rectangulo>.logo1, .logo2, .logo3{
+    width: 25%;
+    padding: 1.5% 5%;
+    
+    border-radius: 10%;
+    background: #ffffff;
+
+}
+
+section>h1{
+    text-align: center;
+    color: #34b0be;
+    font-size: 32px;
+    font-weight: 600;
+    margin: 5vw;
+}
+section>p{
+    padding: 3%;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+.contenedor-servicios{
+ 
+    
+    display: flex;
+    overflow: scroll;
+    
+   
+}
+
+
+.ux-design {
+    background-image: url('../assets/Vectores/Ellipse 14.svg') ;
+    background-repeat: no-repeat;
+    background-size:100% ;
+    text-align: center;
+    
+    padding: 0 15%;
+    
+    background-color: gray;
+
+    margin: 0 1% 0 15%;
+    border-radius: 4%;
+    position: relative;
+    right: 10vw;
+    
+    width: 100%;
+    object-fit: scale-down;
+    height: 294px;
+    
+    
+    
+    
+    
+}
+.ux-design h4{
+    padding-top:69%;
+    padding-bottom: 15%;
+}
+
+.marketing {
+    background-image: url('../assets/Vectores/Ellipse 14.svg') ;
+    background-repeat: no-repeat;
+    background-size:100% ;
+    text-align: center;
+    padding: 0 15%;
+    height: 294px;
+    
+    background-color: gray;
+    
+    margin: 0 1% 0 4%;
+    border-radius: 4%;
+    position: relative;
+    right: 10vw;
+
+    width: 100%;
+    object-fit: scale-down;
+   
+    
+}
+.marketing h4{
+    padding-top:69%;
+    padding-bottom: 15%;
+    
+}
+.research {
+    background-image: url('../assets/Vectores/Ellipse 14.svg') ;
+    background-repeat: no-repeat;
+    background-size:100% ;
+    text-align: center;
+    height: 294px;
+    padding: 0 15%;    
+    background-color: gray;
+
+    margin: 0 1% 0 4%;
+    border-radius: 4%;
+    position: relative;
+    right: 10vw;
+    
+    width: 100%;
+    object-fit: scale-down;
+}
+.research h4{
+    padding-top:69%;
+    padding-bottom: 15%;
+}
+
+.ux-design img, .marketing img, .research img {
+    width: 40%;
+    position: relative;
+    top: 30%;
+    
+}/*
+.contenedor-servicios :active{
+    width: 70%;
+    
+}*/
+.contenedor-habilidades{
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.barra{
+    width: 83vw;
+    height: 20px;
+    border-radius: 10px;
+    background: #eee;
+}
+.progreso{
+    width: var(--w);
+    height: 100%;
+    border-radius: 10px;
+    background: #34b0be;
+    animation: Aumentar 5s ease;
+}
+@keyframes Aumentar {
+    0%{width: 0%;}
+    90%{width: -var(--w);}
+}
+
+.porcentaje{
+    position: relative;
+    top: 5vw;
+    left: 10%;
+    
+}
+
+.contenedor-portafolio{
+ 
+    
+    display: flex;
+    overflow: scroll;
+    
+   
+}
+.contenedor-portafolio > .portafolio{
+    margin: 0 6%;
+}
+.portafolio img{
+    width: 70vw;
+}
+.contenedor-contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    
+}
+
+.contenedor-contacto > .contacto-celular{
+    background-image: url('../assets/Vectores/Ellipse 14.svg') ;
+    background-repeat: no-repeat;
+    background-size:100% ;
+    text-align: center;
+    height: 150px;
+    background-color: gray;
+    width: 40%;
+    border-radius: 7%;
+    margin-left: 4%;
+    
+    
+    
+
+}
+.contenedor-contacto > .contacto-celular span{
+    
+    justify-content: center;
+    
+
+}
+.contenedor-contacto > .contacto-celular  p{
+    color: blue;
+    justify-content: center;
+    font-size: 12px;
+}
+.contenedor-contacto > .contacto-email{
+    background-image: url('../assets/Vectores/Ellipse 14.svg') ;
+    background-repeat: no-repeat;
+    background-size:100% ;
+    text-align: center;
+    background-color: gray;
+    height: 150px;
+    
+    width: 40%;
+    border-radius: 7%;
+    margin-right: 4%;
+    position: relative;
+    top: 49vw;
+    
+
+   
+}
+.contenedor-contacto > .contacto-email span{
+    justify-content: center;
+}
+.contenedor-contacto > .contacto-email  p{
+    color: blue;
+    justify-content: center;
+    font-size: 12px;
+}
