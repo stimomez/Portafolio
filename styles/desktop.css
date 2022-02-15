@@ -11,37 +11,36 @@ body{
     background-color: #242635;
     font-family:'Montserrat', sans-serif;
     font-weight: 400;
+    font-size: 18px;
 }
 
-nav{
-    display: flex;
-    justify-content: end;
+
+label{
+    display: none ;
 }
-nav img{
-    width: 50px;
-    padding: 3%;
-    margin-top: 0.2rem;
-    margin-right: 0.7rem;
-}
-input#menu-hamburguesa{
-    visibility: hidden;
-}
+
+
 input#menu-hamburguesa~ul{
-    background-color: tan;
-    width: 100%;
-    list-style: none;
-    height: 100%;
-    position: absolute;
-    right: 100%;
-    transition: all 300ms linear;
-    text-align: center;
-    padding: 22px;
+    position: static;
+    background-color: transparent;
+    display: flex;
+    padding-top: 0;
+    margin-top: -9px;
+   
+    
     
 }
-input#menu-hamburguesa:checked ~ ul{
-    right:0;
-    z-index: 1000;
+input#menu-hamburguesa~ul>li{
+    padding: 0 1rem;
+    color: #ffffff;
+
+
 }
+input#menu-hamburguesa~ul>li:hover{
+    color: #34b0be;
+    cursor: pointer;
+}
+
 
 .contenedor{
     display: flex;
@@ -55,26 +54,25 @@ input#menu-hamburguesa:checked ~ ul{
     left: 1.5%;
     z-index: 30;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 45px;
     font-weight: 400;
 }
 .contenedor1 p~h1{
-    font-size: 50px;
+    font-size: 150px;
     font-weight: 600;
     color: #34b0be;
     
 }
 .contenedor2{
-
-
     position: relative;
-    left: 15vw;
+
+    left: 30vw;
     
     
 }
 .contenedor2 .div-esfera{
  
-    padding: 35vw;
+    padding: 18vw;
     background-color: #d1ceca;
     border-radius: 100%;
 }
@@ -85,20 +83,24 @@ input#menu-hamburguesa:checked ~ ul{
     top: 8%;
     right: 3%;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 45px;
     font-weight: 400;
 }
 .contenedor3>p+h3{
     color: #34b0be;
 }
  .div-rectangulo{
-    padding: 0.7rem 2rem; 
-    margin: 0 1rem;
+    
+    
     background-color: #d1ceca;
     border-radius: 4%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    width: 72%;
+    margin-left: 13%;
+    
+    
 
 }
 .contenedor3>div .icono1, .icono2, .icono3{
@@ -109,7 +111,7 @@ input#menu-hamburguesa:checked ~ ul{
 }
 
 .div-rectangulo>.logo1, .logo2, .logo3{
-    width: 25%;
+    width: 15%;
     padding: 1.5% 5%;
     
     border-radius: 10%;
@@ -120,7 +122,7 @@ input#menu-hamburguesa:checked ~ ul{
 section>h1{
     text-align: center;
     color: #34b0be;
-    font-size: 32px;
+    font-size: 50px;
     font-weight: 600;
     margin: 5vw;
 }
@@ -132,116 +134,124 @@ section>p{
 
 
 .contenedor-servicios{
- 
-    
+   
     display: flex;
-    overflow: scroll;
+    overflow: hidden;
+    border: 10px;
+    padding: 22px;
+    justify-content:center;
+   
+   
+
+    
     
    
 }
-
-
-.ux-design {
+.ux-design{
     background-image: url('../assets/Vectores/Ellipse 14.svg') ;
     background-repeat: no-repeat;
     background-size:100% ;
     text-align: center;
     
-    padding: 0 15%;
+    padding: 0 5%;
     
     background-color: gray;
 
-    margin: 0 1% 0 15%;
+    margin: 0 1% 0 16%;
     border-radius: 4%;
     position: relative;
-    right: 10vw;
+  
     
     width: 100%;
     
-    height: 294px;
-    
-    
-    
-    
+    height: 350px;
     
 }
 .ux-design h4{
-    padding-top:69%;
-    padding-bottom: 15%;
-    font-size: 18px;
-    font-weight: 400;
+    
+    font-size: 24px;
+     font-weight: 400;
+    padding-top:  50%;
+   
 }
 .ux-design  p{
     color: #d1ceca;
+    font-size: 18px;
+    font-weight: 400;
 }
-
-
-.marketing {
+.marketing{
     background-image: url('../assets/Vectores/Ellipse 14.svg') ;
     background-repeat: no-repeat;
     background-size:100% ;
     text-align: center;
-    padding: 0 15%;
-    height: 294px;
+    
+    padding: 0 5%;
     
     background-color: gray;
-    
-    margin: 0 1% 0 4%;
+
+    margin: 0 1% 0 2%;
     border-radius: 4%;
     position: relative;
-    right: 10vw;
-
+    
+    
     width: 100%;
-   
-   
+    
+    height: 350px;
     
 }
 .marketing h4{
-    padding-top:69%;
-    padding-bottom: 15%;
-    font-size: 18px;
+    padding-top:  50%;
+    
+    font-size: 24px;
     font-weight: 400;
     
 }
 .marketing  p{
     color: #d1ceca;
+    font-size: 18px;
+    font-weight: 400;
 }
-.research {
+
+ .research {
     background-image: url('../assets/Vectores/Ellipse 14.svg') ;
     background-repeat: no-repeat;
     background-size:100% ;
     text-align: center;
-    height: 294px;
-    padding: 0 15%;    
+    
+    padding: 0 5%;
+    
     background-color: gray;
 
-    margin: 0 1% 0 4%;
+    margin: 0 1% 0 2%;
     border-radius: 4%;
-    position: relative;
-    right: 10vw;
+    
     
     width: 100%;
+    
+    height: 350px;
+   
   
 }
+
+
+
 .research h4{
-    padding-top:69%;
-    padding-bottom: 15%;
-    font-size: 18px;
+    padding-top: 50%;
+    font-size: 24px;
     font-weight: 400;
 }.research p{
     color: #d1ceca;
+    font-size: 18px;
+    font-weight: 400;
+}
+.ux-design img, .marketing img, .research img {
+    width: 45%;
+    
+
+    
 }
 
-.ux-design img, .marketing img, .research img {
-    width: 40%;
-    position: relative;
-    top: 30%;
-    
-}/*
-.contenedor-servicios :active{
-    width: 70%;
-    
-}*/
+
 .contenedor-habilidades{
     
     display: flex;
@@ -250,7 +260,7 @@ section>p{
     justify-content: center;
 }
 .contenedor-habilidades h4{
-    font-size: 18px;
+    font-size: 45px;
     font-weight: 400;
     color: #ffffff;
 }
@@ -283,15 +293,17 @@ section>p{
  
     
     display: flex;
-    overflow: scroll;
+    overflow:hidden;
+    flex-direction: row;
+    justify-content: space-between;
     
    
 }
 .contenedor-portafolio > .portafolio{
-    margin: 0 6%;
+    margin: 1px;
 }
 .portafolio img{
-    width: 70vw;
+    width: 23vw;
 }
 .contenedor-contacto{
     border: 33px ;
@@ -308,9 +320,9 @@ section>p{
     background-repeat: no-repeat;
     background-size:100% ;
     text-align: center;
-    height: 166px;
+    height: 240px;
     background-color: gray;
-    width: 150px;
+    width: 250px;
     border-radius: 7%;
     margin-bottom: 10px;
     
@@ -319,11 +331,12 @@ section>p{
 
 }
 .contenedor-contacto > .contacto-celular img{
-    
-    padding: 52px 0 4px 0;
+    width: 53px;
+    padding-top: 93px;
+    margin-right: 24px;
 }
 .contenedor-contacto > .contacto-celular span{
-    font-size: 18px;
+    font-size: 30px;
     font-weight: 400;
     justify-content: center;
     
@@ -334,7 +347,7 @@ section>p{
 .contenedor-contacto > .contacto-celular  p{
     color: #d1ceca;
     justify-content: center;
-    font-size: 12px;
+    font-size: 18px;
 }
 .contenedor-contacto > .contacto-email{
     background-image: url('../assets/Vectores/Ellipse 14.svg') ;
@@ -342,9 +355,9 @@ section>p{
     background-size:100% ;
     text-align: center;
     background-color: gray;
-    height: 166px;
+    height: 240px;
     
-    width: 150px;
+    width: 250px;
     border-radius: 7%;
     margin-left: 43vw;
     
@@ -356,13 +369,14 @@ section>p{
     
 }
 .contenedor-contacto> .contacto-email img{
+    width: 53px;
    
-        padding: 52px 0 4px 0;
+        padding-top: 96px ;
        
     
 }
 .contenedor-contacto > .contacto-email span{
-    font-size: 18px;
+    font-size: 30px;
     font-weight: 400;
     justify-content: center;
     
@@ -370,7 +384,7 @@ section>p{
 .contenedor-contacto > .contacto-email  p{
     color: #d1ceca;
     justify-content: center;
-    font-size: 12px;
+    font-size: 18px;
 }
 footer{
     position: relative;
@@ -382,9 +396,7 @@ footer{
     justify-content: center;
     align-items: center;
     margin-top: 60px;
-    font-size: 18px;
+    font-size: 45px;
     font-weight: 400;
     color: #34b0be;
 }
-
-/*--------------------*/
