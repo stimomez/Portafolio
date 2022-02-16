@@ -11,6 +11,7 @@ body{
     background-color: #242635;
     font-family:'Montserrat', sans-serif;
     font-weight: 400;
+    
 }
 
 nav{
@@ -27,16 +28,24 @@ input#menu-hamburguesa{
     visibility: hidden;
 }
 input#menu-hamburguesa~ul{
-    background-color: tan;
+    background-color: #5c5e68e8;
+    color: #ffffff;
     width: 100%;
     list-style: none;
-    height: 100%;
+   height: 80%;
+    top: 8.5%;
+   
     position: absolute;
     right: 100%;
     transition: all 300ms linear;
     text-align: center;
     padding: 22px;
     
+}
+input#menu-hamburguesa~ul > li{
+    padding: 23px;
+    font-size: 18px;
+    font-weight: 400;
 }
 input#menu-hamburguesa:checked ~ ul{
     right:0;
@@ -55,11 +64,11 @@ input#menu-hamburguesa:checked ~ ul{
     left: 1.5%;
     z-index: 30;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 3.7vw;
     font-weight: 400;
 }
 .contenedor1 p~h1{
-    font-size: 50px;
+    font-size: 12.5vw;
     font-weight: 600;
     color: #34b0be;
     
@@ -90,7 +99,7 @@ input#menu-hamburguesa:checked ~ ul{
     top: 8%;
     right: 3%;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 3.7vw;
     font-weight: 400;
 }
 .contenedor3>p+h3{
@@ -112,6 +121,9 @@ input#menu-hamburguesa:checked ~ ul{
     border-radius: 100%;
     
 }
+.contenedor3 a{
+    color: transparent;
+ }
 
 .div-rectangulo>.logo1, .logo2, .logo3{
     width: 25%;
@@ -390,6 +402,14 @@ footer{
     font-size: 18px;
     font-weight: 400;
     color: #34b0be;
+}
+footer img{
+    width: 26px;
+    
+    margin-bottom: -8px;
+    margin-right: 8px;
+    
+    
 }
 
 /*--------------------*/
