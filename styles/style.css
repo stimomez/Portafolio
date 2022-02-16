@@ -77,7 +77,12 @@ input#menu-hamburguesa:checked ~ ul{
     padding: 35vw;
     background-color: #d1ceca;
     border-radius: 100%;
+    background-image: url(../assets/fotos/mi-foto-sin-fondo.png);
+    background-repeat: no-repeat;
+    background-size:100% ;
+    text-align: center;
 }
+
 
 .contenedor3{
 

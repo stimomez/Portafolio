@@ -73,6 +73,10 @@ input#menu-hamburguesa~ul>li:hover{
 .contenedor2 .div-esfera{
  
     padding: 18vw;
+    background-image: url(../assets/fotos/mi-foto-sin-fondo.png);
+    background-repeat: no-repeat;
+    background-size:100% ;
+    text-align: center;
     background-color: #d1ceca;
     border-radius: 100%;
 }
