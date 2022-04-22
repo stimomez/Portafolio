@@ -76,8 +76,8 @@ input#menu-hamburguesa:checked ~ ul{
 .contenedor2{
 
 
-    position: relative;
-    left: 15vw;
+    margin: 0 auto;
+    text-align: center;
     
     
 }
@@ -86,7 +86,7 @@ input#menu-hamburguesa:checked ~ ul{
     padding: 35vw;
     background-color: #d1ceca;
     border-radius: 100%;
-    background-image: url(../assets/fotos/mi-foto-sin-fondo.png);
+    background-image: url(../assets/fotos/mi-foto.png);
     background-repeat: no-repeat;
     background-size:100% ;
     text-align: center;
@@ -152,7 +152,8 @@ section>p{
  
     
     display: flex;
-    overflow: scroll;
+    overflow: auto;
+    margin: 0 auto;
     
    
 }

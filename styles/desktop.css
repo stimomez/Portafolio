@@ -11,7 +11,7 @@ body{
     background-color: #242635;
     font-family:'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     
 }
 
@@ -53,61 +53,63 @@ input#menu-hamburguesa~ul>li:hover{
 
     position: absolute;
     top: 4%;
-    left: 1.5%;
+    left: 10%;
     z-index: 30;
     color: #ffffff;
-    font-size: 4vw;
+    font-size: 1.6em;
     font-weight: 400;
 }
 .contenedor1 p~h1{
-    font-size: 12vw;
+    font-size: 4em;
     font-weight: 600;
     color: #34b0be;
     
 }
 
 .contenedor2{
-    position: relative;
-
-    left: 30vw;
+    
+    margin: 0 auto;
+    
     
     
 }
 .contenedor2 .div-esfera{
- 
-    padding: 18vw;
-    background-image: url(../assets/fotos/mi-foto-sin-fondo.png);
+    
+    padding: 12.5vw;
+    background-image: url(../assets/fotos/mi-foto.png);
     background-repeat: no-repeat;
     background-size:100% ;
     text-align: center;
     background-color: #d1ceca;
     border-radius: 100%;
+   
 }
 
 .contenedor3{
 
     position: absolute;
     top: 8%;
-    right: 3%;
+    right: 10%;
     color: #ffffff;
-    font-size: 4vw;
+    font-size: 1.6em;
     font-weight: 400;
+    
 }
 .contenedor3>p+h3{
     color: #34b0be;
+  
 }
  .div-rectangulo{
     
     
     background-color: #d1ceca;
-    border-radius: 4%;
+    border-radius: 5px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 72%;
-    margin-left: 13%;
-    
-    
+    width: 45%;
+    margin: 0 auto;
+    height: 62px;
 
 }
 
@@ -140,26 +142,31 @@ input#menu-hamburguesa~ul>li:hover{
 }
 
 section>h1{
+    margin-top: 3px;
+    margin-bottom: 0;
     text-align: center;
     color: #34b0be;
-    font-size: 50px;
+    font-size: 2.5em;
     font-weight: 600;
-    margin: 5vw;
+   
 }
 section>p{
+    margin-top: -12px;
     padding: 3%;
     text-align: center;
     color: #ffffff;
+    
 }
 
 
 .contenedor-servicios{
    
-    display: flex;
-    overflow: hidden;
-    border: 10px;
-    padding: 22px;
-    justify-content:center;
+    margin: 0 auto;
+    width: 70%;
+    border: 2px solid blue;
+    overflow:visible;
+    
+   
    
    
 
