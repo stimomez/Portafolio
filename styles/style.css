@@ -148,149 +148,100 @@ section>p{
 }
 
 
-.contenedor-servicios{
- 
+.container-services {
+    margin: 0 auto;
+    padding: 29px;
     
     display: flex;
+    column-gap: 5%;
+   
+    flex-direction: row;
+    justify-content: center;
     overflow: auto;
-    margin: 0 auto;
-    
    
-}
-
-
-.ux-design {
-    background-image: url('../assets/Vectores/Ellipse 14.svg') ;
+  }
+  .javascript{
+    background-image: url("../assets/Vectores/Ellipse 14.svg");
     background-repeat: no-repeat;
-    background-size:100% ;
+    background-size: 100%;
     text-align: center;
     
-    padding: 0 15%;
-    
+      
     background-color: gray;
-
-    margin: 0 1% 0 15%;
+    padding: 0 17px;
     border-radius: 4%;
-    position: relative;
-    right: 10vw;
-    
-    width: 100%;
-    
-    height: 294px;
-    
-    
-    
-    
-    
-}
-.ux-design h4{
-    padding-top:69%;
-    padding-bottom: 15%;
-    font-size: 18px;
-    font-weight: 400;
-}
-.ux-design  p{
-    color: #d1ceca;
-}
-
-
-.marketing {
-    background-image: url('../assets/Vectores/Ellipse 14.svg') ;
+    margin-left: 400px;
+  }
+  .react,
+  .html,
+  .css {
+    background-image: url("../assets/Vectores/Ellipse 14.svg");
     background-repeat: no-repeat;
-    background-size:100% ;
+    background-size: 100%;
     text-align: center;
-    padding: 0 15%;
-    height: 294px;
     
-    background-color: gray;
-    
-    margin: 0 1% 0 4%;
-    border-radius: 4%;
-    position: relative;
-    right: 10vw;
-
-    width: 100%;
-   
-   
-    
-}
-.marketing h4{
-    padding-top:69%;
-    padding-bottom: 15%;
-    font-size: 18px;
-    font-weight: 400;
-    
-}
-.marketing  p{
-    color: #d1ceca;
-}
-.research {
-    background-image: url('../assets/Vectores/Ellipse 14.svg') ;
-    background-repeat: no-repeat;
-    background-size:100% ;
-    text-align: center;
-    height: 294px;
-    padding: 0 15%;    
-    background-color: gray;
-
-    margin: 0 1% 0 4%;
-    border-radius: 4%;
-    position: relative;
-    right: 10vw;
-    
-    width: 100%;
   
-}
-.research h4{
-    padding-top:69%;
-    padding-bottom: 15%;
+    background-color: gray;
+    padding: 0 17px;
+    border-radius: 4%;
+  }
+  .description-services {
+    margin-top: 43px;
+  }
+  .icon-technology {
+      color: #34b0be;
+      font-size: 50px;
+      
+    }
+  .technology-name{
+      font-size: 24px;
+      font-weight: 400;
+      padding: 6px 0;
+      text-transform: uppercase;
+  }
+  .description-technology{
+    color: #d1ceca;
     font-size: 18px;
     font-weight: 400;
-}.research p{
-    color: #d1ceca;
-}
+    margin-bottom: 20px;
+  }
+  
+  
 
-.ux-design img, .marketing img, .research img {
-    width: 40%;
-    position: relative;
-    top: 30%;
-    
-}/*
-.contenedor-servicios :active{
-    width: 70%;
-    
-}*/
-.contenedor-habilidades{
+
+
+
+.container-skill{
     
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
-.contenedor-habilidades h4{
+.container-skill h4{
     font-size: 18px;
     font-weight: 400;
     color: #ffffff;
 }
-.barra{
+.bar{
     width: 83vw;
     height: 20px;
     border-radius: 10px;
     background: #eee;
 }
-.progreso{
+.progress{
     width: var(--w);
     height: 100%;
     border-radius: 10px;
     background: #34b0be;
-    animation: Aumentar 5s ease;
+    animation: Increment 5s ease;
 }
-@keyframes Aumentar {
+@keyframes Increment {
     0%{width: 0%;}
     90%{width: -var(--w);}
 }
 
-.porcentaje{
+.percentage{
     position: relative;
     top: 5vw;
     left: 10%;

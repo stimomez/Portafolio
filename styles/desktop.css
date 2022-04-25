@@ -1,446 +1,320 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-} 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 /*
 html{
     font-size: 62.5%;
 }*/
-body{
-    background-color: #242635;
-    font-family:'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    
+body {
+  background-color: #242635;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
 }
 
-
-label{
-    display: none ;
+label {
+  display: none;
 }
 
-
-input#menu-hamburguesa~ul{
-    position: static;
-    background-color: transparent;
-    display: flex;
-    padding-top: 0;
-    margin-top: -9px;
-    
-   
-    
-    
+input#menu-hamburguesa ~ ul {
+  position: static;
+  background-color: transparent;
+  display: flex;
+  padding-top: 0;
+  margin-top: -9px;
 }
-input#menu-hamburguesa~ul>li{
-    padding: 0 1rem;
-    color: #ffffff;
-
-
+input#menu-hamburguesa ~ ul > li {
+  padding: 0 1rem;
+  color: #ffffff;
 }
-input#menu-hamburguesa~ul>li:hover{
-    color: #34b0be;
-    cursor: pointer;
+input#menu-hamburguesa ~ ul > li:hover {
+  color: #34b0be;
+  cursor: pointer;
 }
 
-
-.contenedor{
-    display: flex;
-
-    
+.contenedor {
+  display: flex;
 }
-.contenedor1{
-
-    position: absolute;
-    top: 4%;
-    left: 10%;
-    z-index: 30;
-    color: #ffffff;
-    font-size: 1.6em;
-    font-weight: 400;
+.contenedor1 {
+  position: absolute;
+  top: 4%;
+  left: 10%;
+  z-index: 30;
+  color: #ffffff;
+  font-size: 1.6em;
+  font-weight: 400;
 }
-.contenedor1 p~h1{
-    font-size: 4em;
-    font-weight: 600;
-    color: #34b0be;
-    
+.contenedor1 p ~ h1 {
+  font-size: 8vw;
+  font-weight: 600;
+  color: #34b0be;
 }
 
-.contenedor2{
-    
-    margin: 0 auto;
-    
-    
-    
+.contenedor2 {
+  margin: 0 auto;
 }
-.contenedor2 .div-esfera{
-    
-    padding: 12.5vw;
-    background-image: url(../assets/fotos/mi-foto.png);
-    background-repeat: no-repeat;
-    background-size:100% ;
-    text-align: center;
-    background-color: #d1ceca;
-    border-radius: 100%;
-   
+.contenedor2 .div-esfera {
+  padding: 12.5vw;
+  background-image: url(../assets/fotos/mi-foto.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-align: center;
+  background-color: #d1ceca;
+  border-radius: 100%;
 }
 
-.contenedor3{
-
-    position: absolute;
-    top: 8%;
-    right: 10%;
-    color: #ffffff;
-    font-size: 1.6em;
-    font-weight: 400;
-    
+.contenedor3 {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  color: #ffffff;
+  font-size: 1.6em;
+  font-weight: 400;
 }
-.contenedor3>p+h3{
-    color: #34b0be;
+
+.div-rectangulo {
+  background-color: #d1ceca;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 45%;
+  margin: 0 auto;
+  height: 62px;
+}
+
+.contenedor3 > div .icono1,
+.icono2,
+.icono3 {
+  padding: 1.4vw;
+  background: #ffffff;
+  border-radius: 100%;
+}
+
+.contenedor3 img:hover {
+  cursor: pointer;
+  border: 3px solid #34b0be;
+}
+.contenedor3 a {
+  color: transparent;
+}
+
+.div-rectangulo > .logo1,
+.logo2,
+.logo3 {
+  width: 15%;
+  padding: 1.5% 5%;
+
+  border-radius: 10%;
+  background: #ffffff;
+}
+.div-rectangulo > img:hover {
+  cursor: pointer;
+  border: 3px solid #34b0be;
+}
+
+section > h1 {
+  margin-top: 3px;
+  margin-bottom: 0;
+  text-align: center;
+  color: #34b0be;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+section > p {
+  margin-top: -12px;
+  padding: 3%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.container-services {
+  margin: 0 auto;
+  padding: 29px;
   
-}
- .div-rectangulo{
-    
-    
-    background-color: #d1ceca;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 45%;
-    margin: 0 auto;
-    height: 62px;
-
-}
-
-.contenedor3>div .icono1, .icono2, .icono3 {
-    padding: 1.4vw;
-    background: #ffffff;
-    border-radius: 100%;
-    
-}
-
-.contenedor3 img:hover{
-    cursor: pointer;
-    border: 3px solid #34b0be;
-}
-.contenedor3 a{
-   color: transparent;
-}
-
-.div-rectangulo>.logo1, .logo2, .logo3{
-    width: 15%;
-    padding: 1.5% 5%;
-    
-    border-radius: 10%;
-    background: #ffffff;
-
-}
-.div-rectangulo > img:hover{
-    cursor: pointer;
-    border: 3px solid #34b0be;
-}
-
-section>h1{
-    margin-top: 3px;
-    margin-bottom: 0;
-    text-align: center;
-    color: #34b0be;
-    font-size: 2.5em;
-    font-weight: 600;
-   
-}
-section>p{
-    margin-top: -12px;
-    padding: 3%;
-    text-align: center;
-    color: #ffffff;
-    
-}
-
-
-.contenedor-servicios{
-   
-    margin: 0 auto;
-    width: 70%;
-    border: 2px solid blue;
-    overflow:visible;
-    
-   
-   
-   
-
-    
-    
-   
-}
-.ux-design{
-    background-image: url('../assets/Vectores/Ellipse 14.svg') ;
-    background-repeat: no-repeat;
-    background-size:100% ;
-    text-align: center;
-    
-    padding: 0 5%;
-    
-    background-color: gray;
-
-    margin: 0 1% 0 16%;
-    border-radius: 4%;
-    position: relative;
+  display: flex;
+  column-gap: 2%;
   
-    
-    width: 100%;
-    
-    height: 400px;
-    
+  flex-direction: row;
+  justify-content: center;
+  overflow: hidden;
 }
-.ux-design h4{
-    
-    font-size: 24px;
-     font-weight: 400;
-    padding-top:  50%;
-   
+.javascript,
+.react,
+.html
+.css {
+  background-image: url("../assets/Vectores/Ellipse 14.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-align: center;
+  
+  margin-left: 0;
+  background-color: gray;
+  padding: 0 22px;
+  border-radius: 4%;
 }
-.ux-design  p{
-    color: #d1ceca;
-    font-size: 18px;
-    font-weight: 400;
-}
-.marketing{
-    background-image: url('../assets/Vectores/Ellipse 14.svg') ;
-    background-repeat: no-repeat;
-    background-size:100% ;
-    text-align: center;
-    
-    padding: 0 5%;
-    
-    background-color: gray;
 
-    margin: 0 1% 0 2%;
-    border-radius: 4%;
-    position: relative;
-    
-    
-    width: 100%;
-    
-    height: 400px;
-    
+.description-services {
+  margin-top: 103px;
 }
-.marketing h4{
-    padding-top:  50%;
+.icon-technology {
+    color: #34b0be;
+    font-size: 50px;
     
+  }
+.technology-name{
     font-size: 24px;
     font-weight: 400;
-    
+    padding: 6px 0;
+    text-transform: uppercase;
 }
-.marketing  p{
-    color: #d1ceca;
-    font-size: 18px;
-    font-weight: 400;
-}
-
- .research {
-    background-image: url('../assets/Vectores/Ellipse 14.svg') ;
-    background-repeat: no-repeat;
-    background-size:100% ;
-    text-align: center;
-    
-    padding: 0 5%;
-    
-    background-color: gray;
-
-    margin: 0 1% 0 2%;
-    border-radius: 4%;
-    
-    
-    width: 100%;
-    
-    height: 400px;
-   
-  
+.description-technology{
+  color: #d1ceca;
+  font-size: 0.9em;
+  font-weight: 400;
+  margin-bottom: 20px;
 }
 
 
 
-.research h4{
-    padding-top:  50%;
-    font-size: 24px;
-    font-weight: 400;
-}.research p{
-    color: #d1ceca;
-    font-size: 18px;
-    font-weight: 400;
-}
-.ux-design img, .marketing img, .research img {
-    
-    width: 45%;
-    padding-bottom: 25%;
-    margin-top: -8%;
-    
-
-    
-}
 
 
-.contenedor-habilidades{
-    
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+.container-skill{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
-.contenedor-habilidades h4{
-    font-size: 45px;
-    font-weight: 400;
-    color: #ffffff;
+.container-skill h4 {
+  font-size: 45px;
+  font-weight: 400;
+  color: #ffffff;
 }
-.contenedor-habilidades h4>span{
-    font-size: 25px;
-}
-
-.barra{
-    width: 83vw;
-    height: 20px;
-    border-radius: 10px;
-    background: #eee;
-}
-.progreso{
-    width: var(--w);
-    height: 100%;
-    border-radius: 10px;
-    background: #34b0be;
-    animation: Aumentar 5s ease;
-}
-@keyframes Aumentar {
-    0%{width: 0%;}
-    90%{width: -var(--w);}
+.container-skill h4 > span {
+  font-size: 25px;
 }
 
-.porcentaje{
-    position: relative;
-    top: 5vw;
-    left: 10%;
-    
+.bar {
+  width: 83vw;
+  height: 20px;
+  border-radius: 10px;
+  background: #eee;
+}
+.progress {
+  width: var(--w);
+  height: 100%;
+  border-radius: 10px;
+  background: #34b0be;
+  animation: Increment 5s ease;
+}
+@keyframes Increment {
+  0% {
+    width: 0%;
+  }
+  90% {
+    width: -var(--w);
+  }
 }
 
-.contenedor-portafolio{
- 
- 
-    
-    display: flex;
-    overflow:hidden;
-    flex-direction: row;
-    justify-content: space-between;
-    
-   
-}
-.contenedor-portafolio > .portafolio{
-    margin: 1px;
-}
-.portafolio img{
-    width: 23vw;
-}
-.contenedor-contacto{
-    border: 33px ;
-    display: grid;
-   position: relative;
-   justify-content: center;
-    
-    
-    
+.percentage {
+  position: relative;
+  top: 5vw;
+  left: 10%;
 }
 
-.contenedor-contacto > .contacto-celular{
-    background-image: url('../assets/Vectores/Ellipse 14.svg') ;
-    background-repeat: no-repeat;
-    background-size:100% ;
-    text-align: center;
-    height: 240px;
-    background-color: gray;
-    width: 250px;
-    border-radius: 7%;
-    margin-bottom: 10px;
-    
-    
-    
+.contenedor-portafolio {
+  display: flex;
+  overflow: hidden;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contenedor-portafolio > .portafolio {
+  margin: 1px;
+}
+.portafolio img {
+  width: 23vw;
+}
+.contenedor-contacto {
+  border: 33px;
+  display: grid;
+  position: relative;
+  justify-content: center;
+}
 
+.contenedor-contacto > .contacto-celular {
+  background-image: url("../assets/Vectores/Ellipse 14.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-align: center;
+  height: 240px;
+  background-color: gray;
+  width: 250px;
+  border-radius: 7%;
+  margin-bottom: 10px;
 }
-.contenedor-contacto > .contacto-celular img{
-    width: 53px;
-    padding-top: 93px;
-    margin-right: 24px;
+.contenedor-contacto > .contacto-celular img {
+  width: 53px;
+  padding-top: 93px;
+  margin-right: 24px;
 }
-.contenedor-contacto > .contacto-celular span{
-    font-size: 30px;
-    font-weight: 400;
-    justify-content: center;
-    
+.contenedor-contacto > .contacto-celular span {
+  font-size: 30px;
+  font-weight: 400;
+  justify-content: center;
+}
+.contenedor-contacto > .contacto-celular p {
+  color: #d1ceca;
+  justify-content: center;
+  font-size: 18px;
+}
+.contenedor-contacto > .contacto-email {
+  background-image: url("../assets/Vectores/Ellipse 14.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-align: center;
+  background-color: gray;
+  height: 240px;
 
-    
+  width: 250px;
+  border-radius: 7%;
+  margin-left: 43vw;
+}
+.contenedor-contacto > .contacto-email img {
+  width: 53px;
 
+  padding-top: 96px;
 }
-.contenedor-contacto > .contacto-celular  p{
-    color: #d1ceca;
-    justify-content: center;
-    font-size: 18px;
+.contenedor-contacto > .contacto-email span {
+  font-size: 30px;
+  font-weight: 400;
+  justify-content: center;
 }
-.contenedor-contacto > .contacto-email{
-    background-image: url('../assets/Vectores/Ellipse 14.svg') ;
-    background-repeat: no-repeat;
-    background-size:100% ;
-    text-align: center;
-    background-color: gray;
-    height: 240px;
-    
-    width: 250px;
-    border-radius: 7%;
-    margin-left: 43vw;
-    
-    
-    
-    
+.contenedor-contacto > .contacto-email p {
+  color: #d1ceca;
+  justify-content: center;
+  font-size: 18px;
+}
+footer {
+  position: relative;
+  bottom: 0;
+  background: gray;
+  height: 150px;
 
-   
-    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  font-size: 45px;
+  font-weight: 400;
+  color: #34b0be;
 }
-.contenedor-contacto> .contacto-email img{
-    width: 53px;
-   
-        padding-top: 96px ;
-       
-    
+footer img {
+  width: 50px;
+
+  margin-bottom: -10px;
+  margin-right: 8px;
 }
-.contenedor-contacto > .contacto-email span{
-    font-size: 30px;
-    font-weight: 400;
-    justify-content: center;
-    
-}
-.contenedor-contacto > .contacto-email  p{
-    color: #d1ceca;
-    justify-content: center;
-    font-size: 18px;
-}
-footer{
-    position: relative;
-    bottom: 0;
-    background: gray;
-    height: 150px;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 60px;
-    font-size: 45px;
-    font-weight: 400;
-    color: #34b0be;
-   
-}
-footer img{
-    width: 50px;
-    
-    margin-bottom: -10px;
-    margin-right: 8px;
-    
-    
-}
+
+
