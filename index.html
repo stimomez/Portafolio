@@ -24,18 +24,18 @@
                 <img src="./assets/iconos/menu1.svg" alt="menu-hamburguesa">
             </label>
             <ul>
-                <li>Home</li>
-                <li>Servicios</li>
-                <li>Acerca de mi</li>
-                <li>Mis habilidades</li>
-                <li>Mis portafolio</li>
-                <li>Contacto</li>
+                <li class="list home active"><a href="#home">Home</a> </li>
+                <li class="list about"><a href="#about">Acerca de mi</a> </li>
+                <li class="list services"><a href="#services">Servicios</a> </li>            
+                <li class="list abilities"><a href="#abilities">Mis habilidades</a> </li>
+                <li class="list portfolio"><a href="#portfolio">Mis portafolio</a> </li>
+                <li class="list contact"><a href="#contact">Contacto</a> </li>
             </ul>
         </div>
     </nav>
 </header>
-    <div class="contenedor">
-
+    <section id="home" class="contenedor">
+       
         <div class="contenedor1">
            <p><h2>Soy</h2><h1><b>Stiven </b></h1> <h3>Desarrollador <br> Frontend</h3></p>
         </div>
@@ -52,26 +52,27 @@
                <a href="http://www.linkedin.com/in/stiven-morales-meza-8a528421a" target="_blank">
                  <img class="icono1" src="./assets/iconos/cib_linkedin-in.svg" alt="" title="Linkedin">
                </a>
-               <a href="http://"></a>
+               <a href="http://www.instagram.com/stimomez/" target="_blank" rel="noopener noreferrer">
                 <img class="icono2" src="./assets/iconos/ant-design_instagram-filled.svg" alt="" title="Instagram">
-                <img class="icono3" src="./assets/iconos/ant-design_twitter-outlined.svg" alt="" title="Twitter">
+            </a>
+            <a href="http://github.com/stimomez" target="_blank" rel="noopener noreferrer">
+                <img class="icono3" src="./assets/iconos/github-brands.svg" alt="" title="Twitter">
+            </a>
             </div>
         </div>
 
-    </div>
-    <div class="div-rectangulo">
-        <img src="./assets/Logos- Imágenes/akar-icons_google-fill.png" alt="" title="Google" class="logo1">
-        <img src="./assets/Logos- Imágenes/ant-design_amazon-outlined.png" alt="" title="Amazon" class="logo2">
-        <img src="./assets/Logos- Imágenes/bi_spotify.png" alt=""title="Spotify" class="logo3">
-    </div>
+    </section>
+  
 
 
 <main>
-    <section>
+    <section id="about">
+    
         <h1>Acerca de mí</h1>
-        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolorum, repudiandae doloremque iusto dicta rerum quas, amet exercitationem reiciendis nulla quo, possimus asperiores necessitatibus perferendis quos. Tenetur accusamus debitis, aspernatur, vitae ratione pariatur aliquam dolore natus doloribus error magni unde.</p>
+        <p> Soy desarrollador frontend, apasionado por el mundo de la tecnologia buscando siempre estar actualizandome y aprendiendo dia a dia mas en este campo. Me destaco por mi capacidad analitica con la que realizo dicho trabajo, soy estudiante de ingeneria de sistemas y desarrollador web fullStack.
+            </p>
     </section>
-    <section>
+    <section  id="services">
         
         <h1>Servicios</h1>
         <div class="container-services">
@@ -83,7 +84,7 @@
                 
                   <h1 class="technology-name">javascript</h1>
              <p class="description-technology">
-                Desde diseño hasta  implementacion del desarrollo</p>
+                Soluccionando desafios con su logica  </p>
             </div>
         </div> 
 
@@ -92,7 +93,7 @@
             <i class="icon-technology icono-react fa-brands fa-react"></i>
               <h1 class="technology-name">react</h1>
               <p class="description-technology">
-                Desde diseño hasta la implementacion del desarrollo
+                Desarrollando interfaces con su confortable implementacion
             </p>
             </div>
         </div>
@@ -110,7 +111,7 @@
             <i class="icon-technology fa-brands fa-css3"></i>
             <h1 class="technology-name">css</h1>
             <p class="description-technology">
-                Desde diseño hasta  implementacion del desarrollo
+                Dando estilos con su agradable desarrollo
             </p>
         </div>
             <!--  -->
@@ -118,25 +119,25 @@
                 
         </div>
     </section>
-    <section>
+    <section  id="abilities">
         <h1>Mis habilidades</h1>
         <div class="container-skill">
             <div class="habilidades">
                 
-                <h4>Javascript <span>75% </span></h4>
+                <h4>Javascript <span>65% </span></h4>
                 
                 <div class="bar">
-                    <div class="progress" style="--w:75%"></div>
+                    <div class="progress" style="--w:65%"></div>
                 </div>
             </div>
         </div>
         <div class="container-skill">
             <div class="habilidades">
                 <div class="percentage"></div>
-                <h4>React <span>95%</span></h4>
+                <h4>React <span>70%</span></h4>
                 
                 <div class="bar">
-                    <div class="progress" style="--w:95%"></div>
+                    <div class="progress" style="--w:70%"></div>
                 </div>
             </div>
         </div>
@@ -144,9 +145,9 @@
             <div class="habilidades">
                 <div class="percentage"></div>
 
-                <h4>HTML <span>80%</p></h4>
+                <h4>HTML <span>69%</p></h4>
                 <div class="bar">
-                    <div class="progress" style="--w:80%"></div>
+                    <div class="progress" style="--w:69%"></div>
                 </div>
             </div>
         </div>
@@ -154,55 +155,70 @@
             <div class="habilidades">
                 <div class="percentage"></div>
 
-                <h4>CSS <span>80%</p></h4>
+                <h4>CSS <span>70%</p></h4>
                 <div class="bar">
-                    <div class="progress" style="--w:80%"></div>
+                    <div class="progress" style="--w:70%"></div>
                 </div>
             </div>
         </div>
     </section>
-    <section>
+    <section id="portfolio">
         <h1>Mi portafolio</h1>
         <div class="container-skill">
 
             
             <div class="portafolio">
-                <img src="./assets/Logos- Imágenes/Rectangle 65.jpg" alt=""><p>
+                <a href="https://heroic-semifreddo-7cd4b3.netlify.app/" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/Logos- Imágenes/Ecommerce.PNG" alt="">
+                </a>
+                
              </div> 
 
             <div class="portafolio">
-                <img src="./assets/Logos- Imágenes/Rectangle 53.jpg" alt="">
+                <a href="https://heroic-semifreddo-7cd4b3.netlify.app/" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/Logos- Imágenes/Ecommerce-movil.png" alt="">
+            </a>
             </div>
 
             <div class="portafolio">
-                <img src="./assets/Logos- Imágenes/Group 47.jpg" alt="">
+                <a href="https://wizardly-fermat-4fb3a2.netlify.app" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/Logos- Imágenes//RickMorty.PNG" alt="">
+            </a>
             </div>
 
             <div class="portafolio">
-                <img src="./assets/Logos- Imágenes/image 4.jpg" alt="">
+                <a href="https://wizardly-fermat-4fb3a2.netlify.app" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/Logos- Imágenes/RickyMortyMovil.PNG" alt="">
+            </a>
             </div>
             <!--  -->
         
                 
         </div>
     </section>
-    <section>
+    <section id="contact">
         <h1>Contacto</h1>
         <div class="contenedor-contacto">
 
             
             <div class="contacto-celular">
+                <a href="tel:+57 3005771926" target="_blank" rel="noopener noreferrer">
             <img src="./assets/iconos/phone 3.svg" alt=""><p>
+            
                 <h4> <span> Número celular</span></h4>
             </p><p>
                300 577 1926</p>
+            </a>
             </div> 
 
             <div class="contacto-email">
+                <a href="mailto:stimomez@gmail.com" target="_blank" rel="noopener noreferrer">
             <img src="./assets/iconos/mail 3.svg" alt="">
+        
                 <p> <h4><span>Email</span></h4>
                     </p><p>
                 stimomez@gmail.com</p>
+            </a>
             </div>
 
     
@@ -212,6 +228,6 @@
     <p>Hecho con <img src="./assets/Vectores/heart-outline.svg" alt="">en Academlo</p>
 
 </footer>
-
+<script src="./logic/main.js"></script>
 </body>
 </html>

@@ -7,15 +7,35 @@
 html{
     font-size: 62.5%;
 }*/
+html{
+  scroll-behavior: smooth;
+}
 body {
   background-color: #242635;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 1em;
+ 
+}#home{
+  padding-top:  60px;
+}
+#about,#services,#abilities,#portfolio,#contact{
+  padding-top:  40px;
 }
 
 label {
   display: none;
+}
+nav {
+  display: flex;
+  top: 0;
+  position: fixed;
+  right: 0;
+
+  background-color: #242635;
+  z-index: 1000;
+  width: 100%;
+  height: auto;
 }
 
 input#menu-hamburguesa ~ ul {
@@ -23,23 +43,44 @@ input#menu-hamburguesa ~ ul {
   background-color: transparent;
   display: flex;
   padding-top: 0;
-  margin-top: -9px;
+  margin-top: 0;
 }
-input#menu-hamburguesa ~ ul > li {
+input#menu-hamburguesa ~ ul > .list {
   padding: 0 1rem;
-  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -14px 0;
 }
-input#menu-hamburguesa ~ ul > li:hover {
+input#menu-hamburguesa ~ ul > .active {
+  background-color: #34b0be;
+  transition: 0.3 ease background-color;
+}
+.list a {
+  text-decoration: none;
+  color: #fff;
+}
+input#menu-hamburguesa ~ ul > .list a:hover {
   color: #34b0be;
-  cursor: pointer;
 }
 
+input#menu-hamburguesa ~ ul > .list:hover {
+  color: #34b0be;
+  cursor: pointer;
+  background: #fff;
+}
+input#menu-hamburguesa ~ ul > .list a:active {
+  color: #fff;
+  cursor: pointer;
+  background: #34b0be;
+}
 .contenedor {
   display: flex;
+  margin-top: 45px;
 }
 .contenedor1 {
   position: absolute;
-  top: 4%;
+  top: 12%;
   left: 10%;
   z-index: 30;
   color: #ffffff;
@@ -62,7 +103,8 @@ input#menu-hamburguesa ~ ul > li:hover {
   background-size: 100%;
   text-align: center;
   background-color: #d1ceca;
-  border-radius: 100%;
+  border-radius: 10%;
+  margin: 0 auto;
 }
 
 .contenedor3 {
@@ -74,23 +116,13 @@ input#menu-hamburguesa ~ ul > li:hover {
   font-weight: 400;
 }
 
-.div-rectangulo {
-  background-color: #d1ceca;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 45%;
-  margin: 0 auto;
-  height: 62px;
-}
-
 .contenedor3 > div .icono1,
 .icono2,
 .icono3 {
-  padding: 1.4vw;
+  width: 55px;
+  padding: 10px;
   background: #ffffff;
-  border-radius: 100%;
+  border-radius: 20%;
 }
 
 .contenedor3 img:hover {
@@ -101,23 +133,10 @@ input#menu-hamburguesa ~ ul > li:hover {
   color: transparent;
 }
 
-.div-rectangulo > .logo1,
-.logo2,
-.logo3 {
-  width: 15%;
-  padding: 1.5% 5%;
-
-  border-radius: 10%;
-  background: #ffffff;
-}
-.div-rectangulo > img:hover {
-  cursor: pointer;
-  border: 3px solid #34b0be;
-}
 
 section > h1 {
-  margin-top: 3px;
-  margin-bottom: 0;
+  margin: 0;
+
   text-align: center;
   color: #34b0be;
   font-size: 2.5em;
@@ -133,23 +152,21 @@ section > p {
 .container-services {
   margin: 0 auto;
   padding: 29px;
-  
+
   display: flex;
   column-gap: 2%;
-  
+
   flex-direction: row;
   justify-content: center;
   overflow: hidden;
 }
 .javascript,
 .react,
-.html
-.css {
+.html .css {
   background-image: url("../assets/Vectores/Ellipse 14.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   text-align: center;
-  
   margin-left: 0;
   background-color: gray;
   padding: 0 22px;
@@ -158,30 +175,27 @@ section > p {
 
 .description-services {
   margin-top: 103px;
+  max-width: 250px;
+  min-width: 150px ;
 }
 .icon-technology {
-    color: #34b0be;
-    font-size: 50px;
-    
-  }
-.technology-name{
-    font-size: 24px;
-    font-weight: 400;
-    padding: 6px 0;
-    text-transform: uppercase;
+  color: #34b0be;
+  font-size: 50px;
 }
-.description-technology{
+.technology-name {
+  font-size: 24px;
+  font-weight: 400;
+  padding: 6px 0;
+  text-transform: uppercase;
+}
+.description-technology {
   color: #d1ceca;
   font-size: 0.9em;
   font-weight: 400;
   margin-bottom: 20px;
 }
 
-
-
-
-
-.container-skill{
+.container-skill {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -209,6 +223,9 @@ section > p {
   background: #34b0be;
   animation: Increment 5s ease;
 }
+.transitions{
+  transition: 3s;
+}
 @keyframes Increment {
   0% {
     width: 0%;
@@ -224,17 +241,14 @@ section > p {
   left: 10%;
 }
 
-.contenedor-portafolio {
-  display: flex;
-  overflow: hidden;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.contenedor-portafolio > .portafolio {
-  margin: 1px;
+.portafolio {
+  margin: 0 10px;
+  width: 20%;
+  height: 250px;
 }
 .portafolio img {
-  width: 23vw;
+  width: 100%;
+  height: 100%;
 }
 .contenedor-contacto {
   border: 33px;
@@ -316,5 +330,3 @@ footer img {
   margin-bottom: -10px;
   margin-right: 8px;
 }
-
-
