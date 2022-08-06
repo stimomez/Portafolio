@@ -7,7 +7,7 @@
 html{
     font-size: 62.5%;
 }*/
-html{
+html {
   scroll-behavior: smooth;
 }
 body {
@@ -15,15 +15,26 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 1em;
- 
-}#home{
-  padding-top:  60px;
 }
-#about,#services,#abilities,#portfolio,#contact{
-  padding-top:  40px;
+#particles-js {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  opacity: 0.8;
+}
+#home {
+  padding-top: 60px;
+}
+#about,
+#services,
+#abilities,
+#portfolio,
+#contact {
+  padding-top: 40px;
 }
 
-label {
+.label-burguer-menu {
   display: none;
 }
 nav {
@@ -95,6 +106,8 @@ input#menu-hamburguesa ~ ul > .list a:active {
 
 .contenedor2 {
   margin: 0 auto;
+  position: relative;
+  z-index: 100;
 }
 .contenedor2 .div-esfera {
   padding: 12.5vw;
@@ -109,16 +122,17 @@ input#menu-hamburguesa ~ ul > .list a:active {
 
 .contenedor3 {
   position: absolute;
-  top: 20%;
+  top: 15%;
   right: 10%;
   color: #ffffff;
   font-size: 1.6em;
   font-weight: 400;
+  z-index: 100;
 }
 
 .contenedor3 > div .icono1,
-.icono2,
-.icono3 {
+.icono3,.CV-icon {
+  margin-left: 12px;
   width: 55px;
   padding: 10px;
   background: #ffffff;
@@ -133,7 +147,119 @@ input#menu-hamburguesa ~ ul > .list a:active {
   color: transparent;
 }
 
+.title-form {
+  color: #34b0be;
+  display: block;
+  width: 85%;
+  margin: 0 auto;
+}
+.title-form:hover {
+  background: #34b0be;
+  color: #fff;
+  cursor: pointer;
+}
+.contact-form-mobile {
+  display: none;
+}
+.contact-form {
+  width: 85%;
+  position: relative;
+  background: transparent;
+  overflow: hidden;
+  display: block;
+  margin: 0 auto;
+}
+.container-input {
+  position: relative;
+  padding: 4px;
+ 
+}
+.contact-form-input {
+  background: none;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  padding-top: 20px;
+  border: none;
+  outline: 0px;
+  position: relative;
+}
+.contact-form-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid #c7c7c7;
+}
+.contact-form-label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 100%;
+  border-bottom: 3px solid #34b0be;
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+}
+.label-text-name {
+  font-size: 14px;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  transition: all 0.3 ease;
+  color: #fff;
+}
+.contact-form-input:focus + .contact-form-label .label-text-name,
+.contact-form-input:valid + .contact-form-label .label-text-name {
+  transform: translateY(-150%);
+  font-size: 12px;
+  color: #34b0be;
+}
 
+.contact-form-input:focus + .contact-form-label:after,
+.contact-form-input:valid + .contact-form-label:after {
+  transform: translateX(0%);
+}
+.contact-form-textarea {
+  background: transparent;
+  resize: none;
+  outline: 0px;
+  color: #fff;
+  border: 0.5px solid #fff;
+  opacity: 1;
+}
+.contact-form-textarea::placeholder {
+  color: #fff;
+  font-size: 14px;
+}
+
+.contact-form-textarea:focus {
+  outline: 1px solid #34b0be;
+}
+.contact-form-button {
+  height: 20px;
+  width: 100%;
+  background: #34b0be;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  outline: 0px;
+}
+.contact-form-button:hover {
+  background: #fff;
+  color: #34b0be;
+  transition: all 0.8s ease;
+}
+
+.loanding{
+  
+  right: 30%;
+  
+}
 section > h1 {
   margin: 0;
 
@@ -152,17 +278,21 @@ section > p {
 .container-services {
   margin: 0 auto;
   padding: 29px;
-
+  position: relative;
+  z-index: 100;
   display: flex;
   column-gap: 2%;
 
   flex-direction: row;
   justify-content: center;
-  overflow: hidden;
+  overflow: auto;
 }
+
 .javascript,
 .react,
-.html .css {
+.html,
+.css,
+.nodejs {
   background-image: url("../assets/Vectores/Ellipse 14.svg");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -176,7 +306,7 @@ section > p {
 .description-services {
   margin-top: 103px;
   max-width: 250px;
-  min-width: 150px ;
+  min-width: 150px;
 }
 .icon-technology {
   color: #34b0be;
@@ -222,10 +352,22 @@ section > p {
   border-radius: 10px;
   background: #34b0be;
   animation: Increment 5s ease;
+  position: relative;
+  z-index: 100;
 }
-.transitions{
+.transitions {
   transition: 3s;
 }
+
+.progress:hover {
+  cursor: pointer;
+  width: var(--w);
+  height: 100%;
+  border-radius: 10px;
+  background: #34b0be;
+  animation: Increment 5s ease;
+}
+
 @keyframes Increment {
   0% {
     width: 0%;
@@ -245,6 +387,8 @@ section > p {
   margin: 0 10px;
   width: 20%;
   height: 250px;
+  position: relative;
+  z-index: 100;
 }
 .portafolio img {
   width: 100%;
@@ -255,6 +399,7 @@ section > p {
   display: grid;
   position: relative;
   justify-content: center;
+  z-index: 100;
 }
 
 .contenedor-contacto > .contacto-celular {
@@ -310,23 +455,49 @@ section > p {
   justify-content: center;
   font-size: 18px;
 }
-footer {
-  position: relative;
-  bottom: 0;
-  background: gray;
-  height: 150px;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 60px;
-  font-size: 45px;
-  font-weight: 400;
-  color: #34b0be;
+.gion-1 {
+  width: 47.5%;
 }
-footer img {
-  width: 50px;
+.gion-2 {
+  width: 47.5%;
+}
 
-  margin-bottom: -10px;
-  margin-right: 8px;
+@media screen and (max-width: 1048px) {
+  .contenedor3 {
+    right: 5%;
+    top: 13%;
+  }
+  .contenedor3 > div .icono1 {
+    position: absolute;
+    left: -77px;
+    top: 15px;
+  }
+  .contenedor3 > div .CV-icon{
+    position: absolute;
+    left: -77px;
+    top: 100px;
+  }
+  .contenedor3 > div .icono3 {
+    position: absolute;
+    left: -77px;
+    top: 200px;
+  }
+  .javascript {
+    background-image: url("../assets/Vectores/Ellipse 14.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    margin-left: 40%;
+    background-color: gray;
+    padding: 0 22px;
+    border-radius: 4%;
+  }
+
+  .gion-1 {
+    width: 45.5%;
+  }
+  .gion-2 {
+    width: 45.5%;
+  }
 }

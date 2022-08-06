@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio 2</title>
+    <title>Portafolio Stiven</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="./assets/iconos/Portafolio-icon.ico" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,600;1,200&family=Montserrat:wght@400;600&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
     <!--mobile-->
@@ -13,14 +14,16 @@
      <!--desktop-->
      <link rel="stylesheet" href="./styles/desktop.css" media="screen and (min-width: 800px)">
      <script src="https://kit.fontawesome.com/84aa7cdec4.js" crossorigin="anonymous"></script>
+     
 </head>
 <body>
+    <div id="particles-js"></div>
     <header>
     <nav>
         
         <div>
             <input type="checkbox" id="menu-hamburguesa">
-            <label for="menu-hamburguesa">
+            <label class="label-burguer-menu" for="menu-hamburguesa">
                 <img src="./assets/iconos/menu1.svg" alt="menu-hamburguesa">
             </label>
             <ul>
@@ -37,7 +40,7 @@
     <section id="home" class="contenedor">
        
         <div class="contenedor1">
-           <p><h2>Soy</h2><h1><b>Stiven </b></h1> <h3>Desarrollador <br> Frontend</h3></p>
+           <p><h2>Soy</h2><h1><b>Stiven </b></h1> <h3>Desarrollador <br> Full Stack</h3></p>
         </div>
 
         <div class="contenedor2">
@@ -52,24 +55,67 @@
                <a href="http://www.linkedin.com/in/stiven-morales-meza-8a528421a" target="_blank">
                  <img class="icono1" src="./assets/iconos/cib_linkedin-in.svg" alt="" title="Linkedin">
                </a>
-               <a href="http://www.instagram.com/stimomez/" target="_blank" rel="noopener noreferrer">
-                <img class="icono2" src="./assets/iconos/ant-design_instagram-filled.svg" alt="" title="Instagram">
-            </a>
+                      
             <a href="http://github.com/stimomez" target="_blank" rel="noopener noreferrer">
-                <img class="icono3" src="./assets/iconos/github-brands.svg" alt="" title="Twitter">
+                <img class="icono3" src="./assets/iconos/github-brands.svg" alt="" title="github">
+            </a>
+            <a href="./assets/CV/Stiven-Morales_CV.pdf" download="Stiven-Morales_cv.pdf" rel="noopener noreferrer">
+                <img class="CV-icon" src="./assets/iconos/CV.ico" alt="" title="Download CV">
             </a>
             </div>
+
+            <h4 class="title-form">Contactame</h4>
+            <form action="https://formsubmit.co/stimomez@gmail.com" method="POST" id="form-desktop"  class="contact-form">
+                <div class="container-input">                   
+                    <input class="contact-form-input" name="name" required type="text" >
+                 <label class="contact-form-label">
+                    <span class="label-text-name">
+                        Nombre
+                    </span>
+                 </label>
+                </div>
+
+                <div class="container-input">                   
+                    <input class="contact-form-input" name="phone" required type="text" >
+                 <label class="contact-form-label">
+                    <span class="label-text-name">
+                        Telefono
+                    </span>
+                 </label>
+                </div>
+
+                <div class="container-input">                   
+                    <input class="contact-form-input" required name="email-text" type="text" >
+                 <label class="contact-form-label">
+                    <span class="label-text-name">
+                        Email
+                    </span>
+                 </label>
+                </div>
+                <br>
+                <div class="container-input">
+                    <textarea id="text-area-desktop" class="contact-form-textarea" name="message" autocapitalize="characters" required cols="21" rows="5" placeholder="Mensaje"></textarea>
+                    <img id="icon-loanding-desktop" class="loanding" src="./assets/iconos/Spinner-1s-200px.svg" alt="">
+                </div>
+              
+
+                <input type="hidden" name="_next" value="http://stivenmoralesdev.com/">
+                <input type="hidden" name="_captcha" value="false">
+            
+                    <button type="submit" class="contact-form-button">Enviar</button>
+               
+            </form>
+            
         </div>
 
     </section>
   
 
-
 <main>
     <section id="about">
     
         <h1>Acerca de mí</h1>
-        <p> Soy desarrollador frontend, apasionado por el mundo de la tecnologia buscando siempre estar actualizandome y aprendiendo dia a dia mas en este campo. Me destaco por mi capacidad analitica con la que realizo dicho trabajo, soy estudiante de ingeneria de sistemas y desarrollador web fullStack.
+        <p> Soy desarrollador full stack, apasionado por el mundo de la tecnologia buscando siempre estar actualizandome y aprendiendo dia a dia mas en este campo. Me destaco por mi capacidad analitica con la que realizo dicho trabajo, me gusta ponerme metas o desafios para asi ir lograndolos y de este poder crecer profesionalmente y como persona.
             </p>
     </section>
     <section  id="services">
@@ -113,11 +159,20 @@
             <p class="description-technology">
                 Dando estilos con su agradable desarrollo
             </p>
-        </div>
-            <!--  -->
+        </div>     
         
                 
         </div>
+
+        <div class="nodejs">
+            <div class="description-services">
+                <i class="icon-technology fa-brands fa-node-js"></i>
+          <h1 class="technology-name">nodejs</h1>
+          <p class="description-technology">
+            Con su asincronia dando optimas y ordenadas respuestas
+        </p>
+        </div>
+    </div>
     </section>
     <section  id="abilities">
         <h1>Mis habilidades</h1>
@@ -157,7 +212,17 @@
 
                 <h4>CSS <span>70%</p></h4>
                 <div class="bar">
-                    <div class="progress" style="--w:70%"></div>
+                    <div id="pr" class="progress" style="--w:70%"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container-skill">
+            <div class="habilidades">
+                
+                <h4>Nodejs <span>73% </span></h4>
+                
+                <div class="bar">
+                    <div class="progress" style="--w:73%"></div>
                 </div>
             </div>
         </div>
@@ -168,27 +233,29 @@
 
             
             <div class="portafolio">
-                <a href="https://heroic-semifreddo-7cd4b3.netlify.app/" target="_blank" rel="noopener noreferrer">
+                <a href="https://ecommerce-st.netlify.app/" target="_blank" rel="noopener noreferrer">
                     <img src="./assets/Logos- Imágenes/Ecommerce.PNG" alt="">
                 </a>
                 
              </div> 
 
             <div class="portafolio">
-                <a href="https://heroic-semifreddo-7cd4b3.netlify.app/" target="_blank" rel="noopener noreferrer">
+                <a href="https://ecommerce-st.netlify.app/" target="_blank" rel="noopener noreferrer">
                 <img src="./assets/Logos- Imágenes/Ecommerce-movil.png" alt="">
             </a>
             </div>
 
+            
+
             <div class="portafolio">
-                <a href="https://wizardly-fermat-4fb3a2.netlify.app" target="_blank" rel="noopener noreferrer">
-                <img src="./assets/Logos- Imágenes//RickMorty.PNG" alt="">
+                <a href="https://rickandmorty-sti.netlify.app/" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/Logos- Imágenes/RickMortyMovil.PNG" alt="">
             </a>
             </div>
 
             <div class="portafolio">
-                <a href="https://wizardly-fermat-4fb3a2.netlify.app" target="_blank" rel="noopener noreferrer">
-                <img src="./assets/Logos- Imágenes/RickyMortyMovil.PNG" alt="">
+                <a href="https://rickandmorty-sti.netlify.app/" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/Logos- Imágenes//RickMorty.PNG" alt="">
             </a>
             </div>
             <!--  -->
@@ -223,11 +290,75 @@
 
     
     </section>
+    
+    <form action="https://formsubmit.co/stimomez@gmail.com" method="POST" id="form-mobile"  class="contact-form-mobile">
+        <div class="container-input">                   
+            <input class="contact-form-input" name="name" required type="text" >
+         <label class="contact-form-label">
+            <span class="label-text-name">
+                Nombre
+            </span>
+         </label>
+        </div>
+
+        <div class="container-input">                   
+            <input class="contact-form-input" name="phone" required type="text" >
+         <label class="contact-form-label">
+            <span class="label-text-name">
+                Telefono
+            </span>
+         </label>
+        </div>
+
+        <div class="container-input">                   
+            <input class="contact-form-input" required name="email-text" type="text" >
+         <label class="contact-form-label">
+            <span class="label-text-name">
+                Email
+            </span>
+         </label>
+        </div>
+        <br>
+        <div class="container-input">
+            <textarea id="text-area-mobile" class="contact-form-textarea" name="message" autocapitalize="characters" required cols="21" rows="5" placeholder="Mensaje"></textarea>
+            <img id="icon-loanding-mobile" class="loanding" src="./assets/iconos/Spinner-1s-200px.svg" alt="">
+        </div>
+      
+
+        <input type="hidden" name="_next" value="http://stivenmoralesdev.com/">
+        <input type="hidden" name="_captcha" value="false">
+    
+            <button type="submit" class="contact-form-button">Enviar</button>
+    </form>
 </main>
 <footer>
-    <p>Hecho con <img src="./assets/Vectores/heart-outline.svg" alt="">en Academlo</p>
+    
+<div class="footer-container">
+   
+    <div class="footer-container-anchors">
+        <a href="http://www.linkedin.com/in/stiven-morales-meza-8a528421a" target="_blank">
+        <img class="footer-icon" src="./assets/iconos/cib_linkedin-in.svg" alt="" title="Linkedin">
+       
+        </a>    
+  
+     <a href="http://github.com/stimomez" target="_blank" rel="noopener noreferrer">
+      <img class="footer-icon" src="./assets/iconos/github-brands.svg" alt="" title="Twitter">
+     </a>
+    </div>
+    <br>
+    <div class="footer-subtitles">
+    
+     <p> &#169 Stiven Morales Developers</p>
+      <p> All right reserved</p>
+    </div>
+    </div>
+    <strong class="gion-1"></strong>
+    <strong class="gion-2"></strong>
 
 </footer>
+<!-- js Particles.js -->
+<script src="./logic/particles.min.js"></script>
+<script src="./logic//particles.js"></script>
 <script src="./logic/main.js"></script>
 </body>
 </html>
