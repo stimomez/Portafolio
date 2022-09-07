@@ -20,26 +20,29 @@
     <div id="particles-js"></div>
     <header>
     <nav>
-        
+       <button class="switch" id="switch">
+        <span><i class="fa-solid fa-sun"></i></span>
+        <span><i class="fa-solid fa-moon"></i></span>
+       </button>
         <div>
             <input type="checkbox" id="menu-hamburguesa">
             <label class="label-burguer-menu" for="menu-hamburguesa">
-                <img src="./assets/iconos/menu1.svg" alt="menu-hamburguesa">
+                <img id="img-icon" src="./assets/iconos/menu1.svg" alt="menu-hamburguesa">
             </label>
             <ul>
-                <li class="list home active"><a href="#home">Home</a> </li>
-                <li class="list about"><a href="#about">Acerca de mi</a> </li>
-                <li class="list services"><a href="#services">Servicios</a> </li>            
-                <li class="list abilities"><a href="#abilities">Mis habilidades</a> </li>
-                <li class="list portfolio"><a href="#portfolio">Mis portafolio</a> </li>
-                <li class="list contact"><a href="#contact">Contacto</a> </li>
+                <li class="list home active"><a class="a" href="#home">Home</a> </li>
+                <li class="list about"><a class="a" href="#about">Acerca de mi</a> </li>
+                <li class="list services"><a class="a" href="#services">Servicios</a> </li>            
+                <li class="list abilities"><a class="a" href="#abilities">Mis habilidades</a> </li>
+                <li class="list portfolio"><a class="a" href="#portfolio">Mis portafolio</a> </li>
+                <li class="list contact"><a class="a" href="#contact">Contacto</a> </li>
             </ul>
         </div>
     </nav>
 </header>
     <section id="home" class="contenedor">
        
-        <div class="contenedor1">
+        <div class="contenedor1" id="container-1">
            <p><h2>Soy</h2><h1><b>Stiven </b></h1> <h3>Desarrollador <br> Full Stack</h3></p>
         </div>
 
@@ -114,8 +117,8 @@
 <main>
     <section id="about">
     
-        <h1>Acerca de mí</h1>
-        <p> Soy desarrollador full stack, apasionado por el mundo de la tecnologia buscando siempre estar actualizandome y aprendiendo dia a dia mas en este campo. Me destaco por mi capacidad analitica con la que realizo dicho trabajo, me gusta ponerme metas o desafios para asi ir lograndolos y de este poder crecer profesionalmente y como persona.
+        <h1 >Acerca de mí</h1>
+        <p id="about-description"> Soy desarrollador full stack, apasionado por el mundo de la tecnologia buscando siempre estar actualizandome y aprendiendo dia a dia mas en este campo. Me destaco por mi capacidad analitica con la que realizo dicho trabajo, me gusta ponerme metas o desafios para asi ir lograndolos y de este poder crecer profesionalmente y como persona.
             </p>
     </section>
     <section  id="services">
@@ -179,7 +182,7 @@
         <div class="container-skill">
             <div class="habilidades">
                 
-                <h4>Javascript <span>65% </span></h4>
+                <h4 class="habilities-title">Javascript <span>65% </span></h4>
                 
                 <div class="bar">
                     <div class="progress" style="--w:65%"></div>
@@ -189,7 +192,7 @@
         <div class="container-skill">
             <div class="habilidades">
                 <div class="percentage"></div>
-                <h4>React <span>70%</span></h4>
+                <h4 class="habilities-title">React <span>70%</span></h4>
                 
                 <div class="bar">
                     <div class="progress" style="--w:70%"></div>
@@ -200,7 +203,7 @@
             <div class="habilidades">
                 <div class="percentage"></div>
 
-                <h4>HTML <span>69%</p></h4>
+                <h4 class="habilities-title">HTML <span>69%</p></h4>
                 <div class="bar">
                     <div class="progress" style="--w:69%"></div>
                 </div>
@@ -210,7 +213,7 @@
             <div class="habilidades">
                 <div class="percentage"></div>
 
-                <h4>CSS <span>70%</p></h4>
+                <h4 class="habilities-title">CSS <span>70%</p></h4>
                 <div class="bar">
                     <div id="pr" class="progress" style="--w:70%"></div>
                 </div>
@@ -219,7 +222,7 @@
         <div class="container-skill">
             <div class="habilidades">
                 
-                <h4>Nodejs <span>73% </span></h4>
+                <h4 class="habilities-title">Nodejs <span>73% </span></h4>
                 
                 <div class="bar">
                     <div class="progress" style="--w:73%"></div>
@@ -229,7 +232,7 @@
     </section>
     <section id="portfolio">
         <h1>Mi portafolio</h1>
-        <div class="container-skill">
+        <d class="container-skill">
 
             
             <div class="portafolio">
@@ -261,7 +264,7 @@
             <!--  -->
         
                 
-        </div>
+        </d<<iv>
     </section>
     <section id="contact">
         <h1>Contacto</h1>

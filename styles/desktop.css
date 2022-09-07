@@ -3,10 +3,7 @@
   margin: 0;
   padding: 0;
 }
-/*
-html{
-    font-size: 62.5%;
-}*/
+
 html {
   scroll-behavior: smooth;
 }
@@ -48,6 +45,11 @@ nav {
   width: 100%;
   height: auto;
 }
+.nav-dark{
+  background-color: rgb(231, 224, 224);
+}
+
+
 
 input#menu-hamburguesa ~ ul {
   position: static;
@@ -67,10 +69,12 @@ input#menu-hamburguesa ~ ul > .active {
   background-color: #34b0be;
   transition: 0.3 ease background-color;
 }
-.list a {
+.a {
   text-decoration: none;
   color: #fff;
 }
+
+
 input#menu-hamburguesa ~ ul > .list a:hover {
   color: #34b0be;
 }
@@ -98,6 +102,9 @@ input#menu-hamburguesa ~ ul > .list a:active {
   font-size: 1.6em;
   font-weight: 400;
 }
+.contenedor1-dark{
+  color: #000;
+  }
 .contenedor1 p ~ h1 {
   font-size: 8vw;
   font-weight: 600;
@@ -168,6 +175,12 @@ input#menu-hamburguesa ~ ul > .list a:active {
   overflow: hidden;
   display: block;
   margin: 0 auto;
+}
+.contact-form-dark{
+  background: rgba(141, 135, 135, 0.63);
+  padding: 1px 0;
+  border-radius: 10px;
+ 
 }
 .container-input {
   position: relative;
@@ -331,10 +344,13 @@ section > p {
   align-items: center;
   justify-content: center;
 }
-.container-skill h4 {
+.habilities-title{
   font-size: 45px;
   font-weight: 400;
   color: #ffffff;
+}
+.habilities-title-dark{
+  color: #000;
 }
 .container-skill h4 > span {
   font-size: 25px;
