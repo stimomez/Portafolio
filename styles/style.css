@@ -19,9 +19,7 @@ body {
   position: fixed;
   z-index: -1;
   opacity: 1;
-
 }
-
 
 #home,
 #about,
@@ -37,7 +35,6 @@ nav {
   justify-content: end;
 }
 
-
 .switch {
   background: #343d5b;
   border-radius: 1000px;
@@ -48,7 +45,7 @@ nav {
   outline: none;
   height: 100%;
   top: 5px;
- margin: 0 auto;
+  margin: 0 auto;
 }
 .switch span {
   width: 30px;
@@ -81,8 +78,7 @@ nav {
   left: unset;
 }
 
-
-.dark{
+.dark {
   background: #fff;
 }
 nav img {
@@ -91,15 +87,12 @@ nav img {
   right: 2%;
   padding: 4px;
   z-index: 1000;
-
 }
-.img-dark{
+.img-dark {
   background: #040407;
 }
 input#menu-hamburguesa {
   visibility: hidden;
-
- 
 }
 input#menu-hamburguesa ~ ul {
   background-color: #5c5e68e8;
@@ -142,8 +135,8 @@ input#menu-hamburguesa:checked ~ ul {
   font-size: 3.7vw;
   font-weight: 400;
 }
-.contenedor1-dark{
-color: #000;
+.contenedor1-dark {
+  color: #000;
 }
 .contenedor1 p ~ h1 {
   font-size: 12.5vw;
@@ -192,7 +185,7 @@ color: #000;
 .contact-form {
   display: none;
 }
-.contact-form-dark{
+.contact-form-dark {
   background: rgba(141, 135, 135, 0.63);
   padding: 1px 0;
   border-radius: 10px;
@@ -375,14 +368,13 @@ section > p {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-
 }
 .habilities-title {
   font-size: 18px;
   font-weight: 400;
   color: #ffffff;
 }
-.habilities-title-dark{
+.habilities-title-dark {
   color: #000;
 }
 .bar {
