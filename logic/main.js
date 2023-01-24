@@ -12,12 +12,14 @@ const iconLoandingDesktop = document.getElementById("icon-loanding-desktop");
 const img = document.getElementById("img-icon");
 const habilities = document.getElementsByClassName("habilities-title");
 
-const btnSwitch = document.getElementById("switch");
+const  btnSwitch = document.getElementById("switch");
 const containerOne = document.getElementById("container-1");
 const aboutTitle = document.getElementById("about-description");
 
 
-btnSwitch.addEventListener("click", () => {
+
+ 
+ btnSwitch.addEventListener("click", () => {
   document.body.classList.toggle("dark");
   btnSwitch.classList.toggle("active-dark");
   containerOne.classList.toggle("contenedor1-dark");
@@ -30,6 +32,7 @@ btnSwitch.addEventListener("click", () => {
    habilities[i].classList.toggle('habilities-title-dark')
   
 }
+
 
 });
 
