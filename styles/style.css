@@ -408,9 +408,43 @@ section > p {
 .portafolio {
   margin-top: 10px;
 }
+.portafolio a {
+  text-decoration: none;
+}
 .portafolio img {
   width: 70vw;
+  position: relative;
 }
+.project-description {
+  display: none;
+}
+.portafolio:hover .project-description {
+  visibility: visible;
+  top: 0;
+  transition: 1.5s;
+  -webkit-transition: 1.5s;
+  -moz-transition: 1.5s;
+  -ms-transition: 1.5s;
+  -o-transition: 1.5s;
+}
+
+.project-description-ul {
+  margin: 6px auto 0 auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  text-align: center;
+}
+.project-description-ul li {
+  list-style: none;
+  font-size: 35px;
+  color: #4f5379;
+}
+.project-description-click {
+  width: 60px;
+  text-align: center;
+  margin: 0 auto;
+}
+
 .contenedor-contacto {
   border: 33px;
   display: grid;
