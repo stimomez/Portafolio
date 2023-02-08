@@ -418,15 +418,7 @@ section > p {
 .project-description {
   display: none;
 }
-.portafolio:hover .project-description {
-  visibility: visible;
-  top: 0;
-  transition: 1.5s;
-  -webkit-transition: 1.5s;
-  -moz-transition: 1.5s;
-  -ms-transition: 1.5s;
-  -o-transition: 1.5s;
-}
+
 
 .project-description-ul {
   margin: 6px auto 0 auto;

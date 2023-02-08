@@ -444,7 +444,16 @@ section > p {
   justify-content: center;
   z-index: 100;
 }
+.portafolio:hover .project-description {
+  visibility: visible;
+  top: 0;
+  transition: 1.5s;
+}
+.portafolio:disabled .project-description {
 
+ background: red;
+
+}
 .contenedor-contacto > .contacto-celular {
   background-image: url("../assets/Vectores/Ellipse 14.svg");
   background-repeat: no-repeat;
