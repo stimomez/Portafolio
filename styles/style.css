@@ -426,6 +426,13 @@ section > p {
   grid-template-columns: auto auto auto auto;
   text-align: center;
 }
+.project-description-ul li img{
+  width: 50%;
+  height: 56%;
+  object-fit: contain;
+  margin-top: -7px;
+  margin-bottom: -7px;
+}
 .project-description-ul li {
   list-style: none;
   font-size: 35px;
