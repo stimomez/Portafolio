@@ -78,7 +78,7 @@ nav {
   left: unset;
 }
 
-.dark {
+.light{
   background: #fff;
 }
 nav img {
@@ -88,13 +88,13 @@ nav img {
   padding: 4px;
   z-index: 1000;
 }
-.img-dark {
+.img-light {
   background: #040407;
 }
-input#menu-hamburguesa {
+input#hamburger-menu {
   visibility: hidden;
 }
-input#menu-hamburguesa ~ ul {
+input#hamburger-menu ~ ul {
   background-color: #5c5e68e8;
   color: #ffffff;
   width: 100%;
@@ -108,7 +108,7 @@ input#menu-hamburguesa ~ ul {
   padding: 22px;
   position: fixed;
 }
-input#menu-hamburguesa ~ ul > .list {
+input#hamburger-menu ~ ul > .list {
   padding: 23px;
   font-size: 18px;
   font-weight: 400;
@@ -117,37 +117,35 @@ input#menu-hamburguesa ~ ul > .list {
   text-decoration: none;
   color: #fff;
 }
-input#menu-hamburguesa:checked ~ ul {
+input#hamburger-menu:checked ~ ul {
   right: 0;
   z-index: 1000;
   position: fixed;
 }
 
-.contenedor {
+.container {
   display: flex;
 }
-.contenedor1 {
+.container1 {
   position: absolute;
   top: 4%;
   left: 1.5%;
   z-index: 30;
-  color: #ffffff;
+  color: #fff;
   font-size: 3.7vw;
   font-weight: 400;
 }
-.contenedor1-dark {
+.container1-light {
+  /* para que las letras esten negras cuando cambie a dark-mode */
   color: #000;
 }
-.contenedor1 p ~ h1 {
+.container1 p ~ h1 {
   font-size: 12.5vw;
   font-weight: 600;
   color: #34b0be;
 }
-.contenedor2 {
-  margin: 0 auto;
-  text-align: center;
-}
-.contenedor2 .div-esfera {
+
+ .profile-picture{
   padding: 28vw;
   background-color: #d1ceca;
   border-radius: 10%;
@@ -155,28 +153,28 @@ input#menu-hamburguesa:checked ~ ul {
   background-image: url(../assets/fotos/mi-foto.png);
   background-repeat: no-repeat;
   background-size: 100%;
-  text-align: center;
+   
 }
 
-.contenedor3 {
+.container3 {
   position: absolute;
   top: 8%;
   right: 3%;
-  color: #ffffff;
+  color: #fff;
 }
-.contenedor3 > p + h3 {
+.container3 > p + h3 {
   color: #34b0be;
 }
 
-.icono1,
+.icon1,
 .CV-icon,
-.icono3 {
+.icon3 {
   width: 34px;
   padding: 5px;
   background: #f7f1f1;
   border-radius: 20%;
 }
-.contenedor3 a {
+.container3 a {
   color: transparent;
 }
 .title-form {
@@ -185,7 +183,7 @@ input#menu-hamburguesa:checked ~ ul {
 .contact-form {
   display: none;
 }
-.contact-form-dark {
+.contact-form-light {
   background: rgba(141, 135, 135, 0.63);
   padding: 1px 0;
   border-radius: 10px;
@@ -374,7 +372,7 @@ section > p {
   font-weight: 400;
   color: #ffffff;
 }
-.habilities-title-dark {
+.habilities-title-light {
   color: #000;
 }
 .bar {
@@ -405,14 +403,15 @@ section > p {
   left: 10%;
 }
 
-.portafolio {
+.portfolio {
   margin-top: 10px;
+  text-align: center;
 }
-.portafolio a {
+.portfolio a {
   text-decoration: none;
 }
-.portafolio img {
-  width: 70vw;
+.portfolio img {
+  width: 70%;
   position: relative;
 }
 .project-description {
@@ -444,14 +443,14 @@ section > p {
   margin: 0 auto;
 }
 
-.contenedor-contacto {
+.container-contact{
   border: 33px;
   display: grid;
   position: relative;
   justify-content: center;
 }
 
-.contenedor-contacto > .contacto-celular {
+.cell-contact{
   background-image: url("../assets/Vectores/Ellipse 14.svg");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -462,45 +461,44 @@ section > p {
   border-radius: 7%;
   margin-bottom: 10px;
 }
-.contenedor-contacto > .contacto-celular img {
+.cell-contact img {
   padding: 52px 0 4px 0;
 }
-.contenedor-contacto > .contacto-celular span {
+.cell-contact span {
   font-size: 18px;
   font-weight: 400;
   justify-content: center;
 }
-.contenedor-contacto > .contacto-celular p {
+.cell-contact p {
   color: #d1ceca;
   justify-content: center;
   font-size: 12px;
 }
-.contenedor-contacto > .contacto-email {
+.email-contact {
   background-image: url("../assets/Vectores/Ellipse 14.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   text-align: center;
   background-color: gray;
   height: 166px;
-
   width: 150px;
   border-radius: 7%;
   margin-left: 43vw;
 }
-.contenedor-contacto > .contacto-email img {
+.email-contact img {
   padding: 52px 0 4px 0;
 }
-.contenedor-contacto > .contacto-email span {
+.email-contact span {
   font-size: 18px;
   font-weight: 400;
   justify-content: center;
 }
-.contenedor-contacto > .contacto-email p {
+.email-contact p {
   color: #d1ceca;
   justify-content: center;
   font-size: 12px;
 }
-.contenedor-contacto a {
+.container-contact a {
   text-decoration: none;
   color: #d1ceca;
 }

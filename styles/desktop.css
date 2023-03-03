@@ -1,25 +1,7 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  scroll-behavior: smooth;
-}
 body {
-  background-color: #242635;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
   font-size: 1em;
 }
-#particles-js {
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  opacity: 0.8;
-}
+
 #home {
   padding-top: 60px;
 }
@@ -35,7 +17,6 @@ body {
   display: none;
 }
 nav {
-  display: flex;
   top: 0;
   position: fixed;
   right: 0;
@@ -45,27 +26,25 @@ nav {
   width: 100%;
   height: auto;
 }
-.nav-dark{
+.nav-light {
   background-color: rgb(231, 224, 224);
 }
 
-
-
-input#menu-hamburguesa ~ ul {
+input#hamburger-menu ~ ul {
   position: static;
   background-color: transparent;
   display: flex;
   padding-top: 0;
   margin-top: 0;
 }
-input#menu-hamburguesa ~ ul > .list {
+input#hamburger-menu ~ ul > .list {
   padding: 0 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: -14px 0;
 }
-input#menu-hamburguesa ~ ul > .active {
+.active {
   background-color: #34b0be;
   transition: 0.3 ease background-color;
 }
@@ -74,85 +53,60 @@ input#menu-hamburguesa ~ ul > .active {
   color: #fff;
 }
 
-
-input#menu-hamburguesa ~ ul > .list a:hover {
+ .list a:hover {
   color: #34b0be;
 }
-
-input#menu-hamburguesa ~ ul > .list:hover {
+.list:hover {
   color: #34b0be;
   cursor: pointer;
   background: #fff;
 }
-input#menu-hamburguesa ~ ul > .list a:active {
+.list a:active {
   color: #fff;
   cursor: pointer;
   background: #34b0be;
 }
-.contenedor {
-  display: flex;
+.container {
   margin-top: 45px;
 }
-.contenedor1 {
-  position: absolute;
+.container1 {
   top: 12%;
   left: 10%;
-  z-index: 30;
-  color: #ffffff;
   font-size: 1.6em;
-  font-weight: 400;
 }
-.contenedor1-dark{
-  color: #000;
-  }
-.contenedor1 p ~ h1 {
+
+.container1 p ~ h1 {
   font-size: 8vw;
   font-weight: 600;
   color: #34b0be;
 }
 
-.contenedor2 {
-  margin: 0 auto;
-  position: relative;
+.profile-picture {
+  padding: 12.5vw;
   z-index: 100;
 }
-.contenedor2 .div-esfera {
-  padding: 12.5vw;
-  background-image: url(../assets/fotos/mi-foto.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  text-align: center;
-  background-color: #d1ceca;
-  border-radius: 10%;
-  margin: 0 auto;
-}
 
-.contenedor3 {
-  position: absolute;
+.container3 {
   top: 15%;
   right: 10%;
-  color: #ffffff;
   font-size: 1.6em;
   font-weight: 400;
   z-index: 100;
 }
 
-.contenedor3 > div .icono1,
-.icono3,.CV-icon {
+.icon1,
+.icon3,
+.CV-icon {
   margin-left: 12px;
   width: 55px;
   padding: 10px;
-  background: #ffffff;
-  border-radius: 20%;
 }
 
-.contenedor3 img:hover {
+.container3 img:hover {
   cursor: pointer;
   border: 3px solid #34b0be;
 }
-.contenedor3 a {
-  color: transparent;
-}
+
 
 .title-form {
   color: #34b0be;
@@ -176,129 +130,31 @@ input#menu-hamburguesa ~ ul > .list a:active {
   display: block;
   margin: 0 auto;
 }
-.contact-form-dark{
+.contact-form-light {
   background: rgba(141, 135, 135, 0.63);
   padding: 1px 0;
   border-radius: 10px;
- 
-}
-.container-input {
-  position: relative;
-  padding: 4px;
- 
-}
-.contact-form-input {
-  background: none;
-  width: 100%;
-  height: 100%;
-  color: #fff;
-  padding-top: 20px;
-  border: none;
-  outline: 0px;
-  position: relative;
-}
-.contact-form-label {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  border-bottom: 1px solid #c7c7c7;
-}
-.contact-form-label::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  width: 100%;
-  height: 100%;
-  border-bottom: 3px solid #34b0be;
-  transform: translateX(-100%);
-  transition: all 0.3s ease;
-}
-.label-text-name {
-  font-size: 14px;
-  position: absolute;
-  bottom: 5px;
-  left: 0;
-  transition: all 0.3 ease;
-  color: #fff;
-}
-.contact-form-input:focus + .contact-form-label .label-text-name,
-.contact-form-input:valid + .contact-form-label .label-text-name {
-  transform: translateY(-150%);
-  font-size: 12px;
-  color: #34b0be;
 }
 
-.contact-form-input:focus + .contact-form-label:after,
-.contact-form-input:valid + .contact-form-label:after {
-  transform: translateX(0%);
-}
-.contact-form-textarea {
-  background: transparent;
-  resize: none;
-  outline: 0px;
-  color: #fff;
-  border: 0.5px solid #fff;
-  opacity: 1;
-}
-.contact-form-textarea::placeholder {
-  color: #fff;
-  font-size: 14px;
-}
 
-.contact-form-textarea:focus {
-  outline: 1px solid #34b0be;
-}
-.contact-form-button {
-  height: 20px;
-  width: 100%;
-  background: #34b0be;
-  border: 0;
-  color: #fff;
-  cursor: pointer;
-  outline: 0px;
-}
-.contact-form-button:hover {
-  background: #fff;
-  color: #34b0be;
-  transition: all 0.8s ease;
-}
-
-.loanding{
-  
+.loanding {
   right: 30%;
-  
 }
 section > h1 {
   margin: 0;
-
-  text-align: center;
-  color: #34b0be;
   font-size: 2.5em;
-  font-weight: 600;
 }
 section > p {
   margin-top: -12px;
-  padding: 3%;
-  text-align: center;
-  color: #ffffff;
 }
 
 .container-services {
-  margin: 0 auto;
-  padding: 29px;
+
   position: relative;
   z-index: 100;
-  display: flex;
   column-gap: 2%;
 
-  flex-direction: row;
-  justify-content: center;
-  overflow: auto;
+
 }
 
 .javascript,
@@ -306,14 +162,9 @@ section > p {
 .html,
 .css,
 .nodejs {
-  background-image: url("../assets/Vectores/Ellipse 14.svg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  text-align: center;
+
   margin-left: 0;
-  background-color: gray;
   padding: 0 22px;
-  border-radius: 4%;
 }
 
 .description-services {
@@ -325,49 +176,24 @@ section > p {
   color: #34b0be;
   font-size: 50px;
 }
-.technology-name {
-  font-size: 24px;
-  font-weight: 400;
-  padding: 6px 0;
-  text-transform: uppercase;
-}
+
 .description-technology {
-  color: #d1ceca;
   font-size: 0.9em;
-  font-weight: 400;
-  margin-bottom: 20px;
 }
 
-.container-skill {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-.habilities-title{
+
+.habilities-title {
   font-size: 45px;
   font-weight: 400;
   color: #ffffff;
 }
-.habilities-title-dark{
-  color: #000;
-}
+
 .container-skill h4 > span {
   font-size: 25px;
 }
 
-.bar {
-  width: 83vw;
-  height: 20px;
-  border-radius: 10px;
-  background: #eee;
-}
+
 .progress {
-  width: var(--w);
-  height: 100%;
-  border-radius: 10px;
-  background: #34b0be;
-  animation: Increment 5s ease;
   position: relative;
   z-index: 100;
 }
@@ -384,29 +210,17 @@ section > p {
   animation: Increment 5s ease;
 }
 
-@keyframes Increment {
-  0% {
-    width: 0%;
-  }
-  90% {
-    width: -var(--w);
-  }
-}
 
-.percentage {
-  position: relative;
-  top: 5vw;
-  left: 10%;
-}
 
-.portafolio {
+
+.portfolio {
   margin: 0 10px;
   width: 20%;
   height: 250px;
   position: relative;
   z-index: 100;
 }
-.portafolio img {
+.portfolio img {
   width: 100%;
   height: 100%;
 }
@@ -437,74 +251,45 @@ section > p {
   font-weight: bold;
   color: #42aab6;
 }
-.contenedor-contacto {
-  border: 33px;
-  display: grid;
-  position: relative;
-  justify-content: center;
+.container-contact {
   z-index: 100;
 }
-.portafolio:hover .project-description {
+.portfolio:hover .project-description {
   visibility: visible;
   top: 0;
   transition: 1.5s;
 }
-.portafolio:disabled .project-description {
-
- background: red;
-
+.portfolio:disabled .project-description {
+  background: red;
 }
-.contenedor-contacto > .contacto-celular {
-  background-image: url("../assets/Vectores/Ellipse 14.svg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  text-align: center;
-  height: 240px;
-  background-color: gray;
+.cell-contact {
   width: 250px;
-  border-radius: 7%;
-  margin-bottom: 10px;
+  height: 240px;
 }
-.contenedor-contacto > .contacto-celular img {
+.cell-contact img {
   width: 53px;
   padding-top: 93px;
   margin-right: 24px;
 }
-.contenedor-contacto > .contacto-celular span {
+.cell-contact span {
   font-size: 30px;
-  font-weight: 400;
-  justify-content: center;
 }
-.contenedor-contacto > .contacto-celular p {
-  color: #d1ceca;
-  justify-content: center;
+.cell-contact p {
   font-size: 18px;
 }
-.contenedor-contacto > .contacto-email {
-  background-image: url("../assets/Vectores/Ellipse 14.svg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  text-align: center;
-  background-color: gray;
-  height: 240px;
-
+.email-contact {
   width: 250px;
-  border-radius: 7%;
-  margin-left: 43vw;
+  height: 240px;
 }
-.contenedor-contacto > .contacto-email img {
+.email-contact img {
   width: 53px;
 
   padding-top: 96px;
 }
-.contenedor-contacto > .contacto-email span {
+.email-contact span {
   font-size: 30px;
-  font-weight: 400;
-  justify-content: center;
 }
-.contenedor-contacto > .contacto-email p {
-  color: #d1ceca;
-  justify-content: center;
+.email-contact p {
   font-size: 18px;
 }
 
@@ -525,7 +310,7 @@ section > p {
     left: -77px;
     top: 15px;
   }
-  .contenedor3 > div .CV-icon{
+  .contenedor3 > div .CV-icon {
     position: absolute;
     left: -77px;
     top: 100px;
@@ -536,14 +321,8 @@ section > p {
     top: 200px;
   }
   .javascript {
-    background-image: url("../assets/Vectores/Ellipse 14.svg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    text-align: center;
     margin-left: 40%;
-    background-color: gray;
     padding: 0 22px;
-    border-radius: 4%;
   }
 
   .gion-1 {

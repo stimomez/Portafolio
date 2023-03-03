@@ -1,8 +1,15 @@
-const sections = document.querySelectorAll("section");
-const navList = document.querySelectorAll("nav div ul li");
-const nav = document.querySelectorAll("nav");
-const checkbox = document.getElementById("menu-hamburguesa");
 const rootStyles = document.documentElement.style;
+
+const sections = document.querySelectorAll("section");
+const nav = document.querySelectorAll("nav");
+const navList = document.querySelectorAll("nav div ul li");
+const habilities = document.getElementsByClassName("habilities-title");
+const btnSwitch = document.getElementById("switch");
+const aboutTitle = document.getElementById("about-description");
+const containerOne = document.getElementById("container-1");
+
+const checkbox = document.getElementById("menu-hamburguesa");
+
 const formDesktop = document.getElementById("form-desktop");
 const formMobile = document.getElementById("form-mobile");
 const textAreaMobile = document.getElementById("text-area-mobile");
@@ -10,41 +17,19 @@ const iconLoandingMobile = document.getElementById("icon-loanding-mobile");
 const textAreaDesktop = document.getElementById("text-area-desktop");
 const iconLoandingDesktop = document.getElementById("icon-loanding-desktop");
 const img = document.getElementById("img-icon");
-const habilities = document.getElementsByClassName("habilities-title");
-
-const  btnSwitch = document.getElementById("switch");
-const containerOne = document.getElementById("container-1");
-const aboutTitle = document.getElementById("about-description");
-
-
-
- 
- btnSwitch.addEventListener("click", () => {
-  document.body.classList.toggle("dark");
-  btnSwitch.classList.toggle("active-dark");
-  containerOne.classList.toggle("contenedor1-dark");
-  formDesktop.classList.toggle("contact-form-dark");
-  formMobile.classList.toggle("contact-form-dark");
-  aboutTitle.classList.toggle("contenedor1-dark");
-  nav[0].classList.toggle("nav-dark");
-  img.classList.toggle("img-dark");
-  for (let i = 0; i < habilities.length; i++) {
-   habilities[i].classList.toggle('habilities-title-dark')
-  
-}
-
-
-});
 
 let form = null;
 let textArea = null;
 let iconLoanding = null;
 
+
 if (screen.width >= 800) {
+  // formulario en escritorio
   form = formDesktop;
   textArea = textAreaDesktop;
   iconLoanding = iconLoandingDesktop;
 } else {
+  // formulario en celular o tablet
   form = formMobile;
   textArea = textAreaMobile;
   iconLoanding = iconLoandingMobile;
@@ -65,6 +50,8 @@ navList.forEach((li) => {
   });
 });
 
+
+
 window.addEventListener("scroll", () => {
   let current = "";
   sections.forEach((section) => {
@@ -83,3 +70,17 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+const lightMode = () => {
+  document.body.classList.toggle("light");
+  btnSwitch.classList.toggle("active-dark");
+  containerOne.classList.toggle("contenedor1-light");
+  formDesktop.classList.toggle("contact-form-light");
+  formMobile.classList.toggle("contact-form-light");
+  aboutTitle.classList.toggle("container1-light");
+  nav[0].classList.toggle("nav-light");
+  img.classList.toggle("img-light");
+  for (let i = 0; i < habilities.length; i++) {
+    habilities[i].classList.toggle("habilities-title-light");
+  }
+};

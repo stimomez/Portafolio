@@ -16,57 +16,57 @@
      <script src="https://kit.fontawesome.com/84aa7cdec4.js" crossorigin="anonymous"></script>
      
 </head>
-<body >
+<body>
     <div id="particles-js"></div>
     <header>
     <nav>
-       <button class="switch" id="switch">
+       <button class="switch" id="switch" onclick="lightMode()">
         <span><i class="fa-solid fa-sun"></i></span>
         <span><i class="fa-solid fa-moon"></i></span>
        </button>
         <div>
-            <input type="checkbox" id="menu-hamburguesa">
-            <label class="label-burguer-menu" for="menu-hamburguesa">
-                <img id="img-icon" src="./assets/iconos/menu1.svg" alt="menu-hamburguesa">
+            <input type="checkbox" id="hamburger-menu">
+            <label class="label-burguer-menu" for="hamburger-menu">
+                <img id="img-icon" src="./assets/iconos/menu1.svg" alt="hamburger-menu">
             </label>
             <ul>
-                <li class="list home active"><a class="a" href="#home">Home</a> </li>
+                <li class="list home "><a class="a" href="#home">Home</a> </li>
                 <li class="list about"><a class="a" href="#about">Acerca de mi</a> </li>
                 <li class="list services"><a class="a" href="#services">Servicios</a> </li>            
-                <li class="list abilities"><a class="a" href="#abilities">Mis habilidades</a> </li>
-                <li class="list portfolio"><a class="a" href="#portfolio">Mis portafolio</a> </li>
+                <li class="list abilities"><a class="a" href="#abilities">Habilidades</a> </li>
+                <li class="list portfolioo"><a class="a" href="#portfolio">Portafolio</a> </li>
                 <li class="list contact"><a class="a" href="#contact">Contacto</a> </li>
             </ul>
         </div>
     </nav>
-</header>
-    <section id="home" class="contenedor">
+    </header>
+    <section id="home" class="container">
        
-        <div class="contenedor1" id="container-1">
+        <div class="container1" id="container-1">
            <p><h2>Soy</h2><h1><b>Stiven </b></h1> <h3>Desarrollador <br> Full Stack</h3></p>
         </div>
 
-        <div class="contenedor2">
-            <div class="div-esfera">
-               
+     
+            <div class="profile-picture">
+               <!-- foto de perfil -->
             </div>
             
-        </div>
-        <div class="contenedor3">
+ 
+        <div class="container3">
             
-            <div>
+            <div class="icons">
                <a href="http://www.linkedin.com/in/stiven-morales-meza-8a528421a" target="_blank">
-                 <img class="icono1" src="./assets/iconos/cib_linkedin-in.svg" alt="" title="Linkedin">
+                 <img class="icon1" src="./assets/iconos/cib_linkedin-in.svg" alt="" title="Linkedin">
                </a>
                       
             <a href="http://github.com/stimomez" target="_blank" rel="noopener noreferrer">
-                <img class="icono3" src="./assets/iconos/github-brands.svg" alt="" title="github">
+                <img class="icon3" src="./assets/iconos/github-brands.svg" alt="" title="github">
             </a>
             <a href="./assets/CV/CV_STIVEN_MORALES.pdf" download="CV_STIVEN_MORALES.pdf" rel="noopener noreferrer">
                 <img class="CV-icon" src="./assets/iconos/CV.ico" alt="" title="Download CV">
             </a>
             </div>
-
+            <!-- formulario contactame para escritorio -->
             <h4 class="title-form">Contactame</h4>
             <form action="https://formsubmit.co/stimomez@gmail.com" method="POST" id="form-desktop"  class="contact-form">
                 <div class="container-input">                   
@@ -232,10 +232,10 @@
     </section>
     <section id="portfolio">
         <h1>Mi portafolio</h1>
-        <d class="container-skill">
+        <div class="container-skill">
 
             
-            <div class="portafolio">
+            <div class="portfolio">
                 <a href="https://ecommerce-st.netlify.app/" target="_blank" rel="noopener noreferrer">
                     <img src="./assets/Logos- Imágenes/Ecommerce.PNG" alt="">
                    <div class="project-description">
@@ -254,7 +254,7 @@
                 
              </div> 
 
-            <div class="portafolio">
+            <div class="portfolio">
                 <a href="https://movies-app-sti.netlify.app/" target="_blank" rel="noopener noreferrer">
                 <img src="./assets/Logos- Imágenes/movies-app.png" alt="">
                 <div class="project-description">
@@ -270,11 +270,9 @@
                     <p class="project-description-click"><img src="./assets/Logos- Imágenes/click.gif" alt=""></p>
                     </div>
             </a>
-            </div>
+            </div>            
 
-            
-
-            <div class="portafolio">
+            <div class="portfolio">
                 <a href="https://rick-and-morty-st.vercel.app/" target="_blank" rel="noopener noreferrer">
                 <img src="./assets/Logos- Imágenes//RickMorty.PNG" alt="">
                 <div class="project-description">
@@ -292,7 +290,7 @@
             </a>
             </div>
 
-            <div class="portafolio">
+            <div class="portfolio">
                 <a href="https://git-app-sti.netlify.app/" target="_blank" rel="noopener noreferrer">
                 <img src="./assets/Logos- Imágenes/git_app.png" alt="">
 
@@ -313,29 +311,29 @@
             <!--  -->
         
                 
-        </d<<iv>
+        </div>
     </section>
     <section id="contact">
         <h1>Contacto</h1>
-        <div class="contenedor-contacto">
+        <div class="container-contact">
 
             
-            <div class="contacto-celular">
+            <div class="cell-contact">
                 <a href="tel:+57 3005771926" target="_blank" rel="noopener noreferrer">
-            <img src="./assets/iconos/phone 3.svg" alt=""><p>
+            <img src="./assets/iconos/phone 3.svg" alt="">
             
                 <h4> <span> Número celular</span></h4>
-            </p><p>
+           <p>
                300 577 1926</p>
             </a>
             </div> 
 
-            <div class="contacto-email">
+            <div class="email-contact">
                 <a href="mailto:stimomez@gmail.com" target="_blank" rel="noopener noreferrer">
             <img src="./assets/iconos/mail 3.svg" alt="">
         
-                <p> <h4><span>Email</span></h4>
-                    </p><p>
+              <h4><span>Email</span></h4>
+                 <p>
                 stimomez@gmail.com</p>
             </a>
             </div>
@@ -343,6 +341,7 @@
     
     </section>
     
+            <!-- formulario contactame para celular o tablet -->
     <form action="https://formsubmit.co/stimomez@gmail.com" method="POST" id="form-mobile"  class="contact-form-mobile">
         <div class="container-input">                   
             <input class="contact-form-input" name="name" required type="text" >
