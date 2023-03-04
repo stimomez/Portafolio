@@ -22,7 +22,6 @@ let form = null;
 let textArea = null;
 let iconLoanding = null;
 
-
 if (screen.width >= 800) {
   // formulario en escritorio
   form = formDesktop;
@@ -50,8 +49,6 @@ navList.forEach((li) => {
   });
 });
 
-
-
 window.addEventListener("scroll", () => {
   let current = "";
   sections.forEach((section) => {
@@ -74,13 +71,15 @@ window.addEventListener("scroll", () => {
 const lightMode = () => {
   document.body.classList.toggle("light");
   btnSwitch.classList.toggle("active-dark");
-  containerOne.classList.toggle("contenedor1-light");
+  containerOne.classList.toggle("container-light");
   formDesktop.classList.toggle("contact-form-light");
   formMobile.classList.toggle("contact-form-light");
-  aboutTitle.classList.toggle("container1-light");
+  aboutTitle.classList.toggle("container-light");
   nav[0].classList.toggle("nav-light");
   img.classList.toggle("img-light");
+  // console.log(habilities.length);
   for (let i = 0; i < habilities.length; i++) {
-    habilities[i].classList.toggle("habilities-title-light");
+    console.log(habilities[i]);
+    habilities[i].classList.toggle("container-light");
   }
 };

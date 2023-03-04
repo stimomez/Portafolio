@@ -9,7 +9,7 @@ html {
 }
 body {
   background-color: #242635;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Shantell Sans', cursive;
   font-weight: 400;
 }
 
@@ -126,6 +126,11 @@ input#hamburger-menu:checked ~ ul {
 .container {
   display: flex;
 }
+.container-light  {
+  /* para que las letras esten negras cuando cambie a dark-light */
+  color: #2e2d2b  !important;
+ 
+}
 .container1 {
   position: absolute;
   top: 4%;
@@ -134,10 +139,6 @@ input#hamburger-menu:checked ~ ul {
   color: #fff;
   font-size: 3.7vw;
   font-weight: 400;
-}
-.container1-light {
-  /* para que las letras esten negras cuando cambie a dark-mode */
-  color: #000;
 }
 .container1 p ~ h1 {
   font-size: 12.5vw;
@@ -350,9 +351,10 @@ section > p {
 }
 .technology-name {
   font-size: 24px;
-  font-weight: 400;
+  font-weight:bold;
   padding: 6px 0;
   text-transform: uppercase;
+  color: #2e2d2b;
 }
 .description-technology {
   color: #d1ceca;
@@ -370,11 +372,9 @@ section > p {
 .habilities-title {
   font-size: 18px;
   font-weight: 400;
-  color: #ffffff;
+  color: #fff;
 }
-.habilities-title-light {
-  color: #000;
-}
+
 .bar {
   width: 83vw;
   height: 20px;
